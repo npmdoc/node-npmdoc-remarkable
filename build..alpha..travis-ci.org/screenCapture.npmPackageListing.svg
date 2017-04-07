@@ -1,151 +1,151 @@
 <svg height="2366" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="2366" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-07 10:57:17 +0000  1008277 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-07 10:57:17 +0000     3994 bytes  CHANGELOG.md</tspan>
-<tspan x="10" y="58">  2.  2017-04-07 10:57:17 +0000     1137 bytes  LICENSE</tspan>
-<tspan x="10" y="74">  3.  2017-04-07 10:57:17 +0000     2347 bytes  Makefile</tspan>
-<tspan x="10" y="90">  4.  2017-04-07 10:57:17 +0000     8876 bytes  README.md</tspan>
-<tspan x="10" y="106">  5.  2017-04-07 10:57:17 +0000      246 bytes  benchmark/fixtures/block-bq-flat.md</tspan>
-<tspan x="10" y="122">  6.  2017-04-07 10:57:17 +0000      355 bytes  benchmark/fixtures/block-bq-nested.md</tspan>
-<tspan x="10" y="138">  7.  2017-04-07 10:57:17 +0000       73 bytes  benchmark/fixtures/block-code.md</tspan>
-<tspan x="10" y="154">  8.  2017-04-07 10:57:17 +0000       72 bytes  benchmark/fixtures/block-fences.md</tspan>
-<tspan x="10" y="170">  9.  2017-04-07 10:57:17 +0000      123 bytes  benchmark/fixtures/block-heading.md</tspan>
-<tspan x="10" y="186"> 10.  2017-04-07 10:57:17 +0000       74 bytes  benchmark/fixtures/block-hr.md</tspan>
-<tspan x="10" y="202"> 11.  2017-04-07 10:57:17 +0000      283 bytes  benchmark/fixtures/block-html.md</tspan>
-<tspan x="10" y="218"> 12.  2017-04-07 10:57:17 +0000      113 bytes  benchmark/fixtures/block-lheading.md</tspan>
-<tspan x="10" y="234"> 13.  2017-04-07 10:57:17 +0000      525 bytes  benchmark/fixtures/block-list-flat.md</tspan>
-<tspan x="10" y="250"> 14.  2017-04-07 10:57:17 +0000      391 bytes  benchmark/fixtures/block-list-nested.md</tspan>
-<tspan x="10" y="266"> 15.  2017-04-07 10:57:17 +0000      474 bytes  benchmark/fixtures/block-ref-flat.md</tspan>
-<tspan x="10" y="282"> 16.  2017-04-07 10:57:17 +0000      257 bytes  benchmark/fixtures/block-ref-nested.md</tspan>
-<tspan x="10" y="298"> 17.  2017-04-07 10:57:17 +0000    20244 bytes  benchmark/fixtures/block-tables-large.md</tspan>
-<tspan x="10" y="314"> 18.  2017-04-07 10:57:17 +0000      508 bytes  benchmark/fixtures/block-tables.md</tspan>
-<tspan x="10" y="330"> 19.  2017-04-07 10:57:17 +0000      557 bytes  benchmark/fixtures/inline-autolink.md</tspan>
-<tspan x="10" y="346"> 20.  2017-04-07 10:57:17 +0000       64 bytes  benchmark/fixtures/inline-backticks.md</tspan>
-<tspan x="10" y="362"> 21.  2017-04-07 10:57:17 +0000      155 bytes  benchmark/fixtures/inline-em-flat.md</tspan>
-<tspan x="10" y="378"> 22.  2017-04-07 10:57:17 +0000      158 bytes  benchmark/fixtures/inline-em-nested.md</tspan>
-<tspan x="10" y="394"> 23.  2017-04-07 10:57:17 +0000      173 bytes  benchmark/fixtures/inline-em-worst.md</tspan>
-<tspan x="10" y="410"> 24.  2017-04-07 10:57:17 +0000      328 bytes  benchmark/fixtures/inline-entity.md</tspan>
-<tspan x="10" y="426"> 25.  2017-04-07 10:57:17 +0000      185 bytes  benchmark/fixtures/inline-escape.md</tspan>
-<tspan x="10" y="442"> 26.  2017-04-07 10:57:17 +0000      516 bytes  benchmark/fixtures/inline-html.md</tspan>
-<tspan x="10" y="458"> 27.  2017-04-07 10:57:17 +0000      730 bytes  benchmark/fixtures/inline-links-flat.md</tspan>
-<tspan x="10" y="474"> 28.  2017-04-07 10:57:17 +0000      313 bytes  benchmark/fixtures/inline-links-nested.md</tspan>
-<tspan x="10" y="490"> 29.  2017-04-07 10:57:17 +0000    20248 bytes  benchmark/fixtures/inline-newlines-large.md</tspan>
-<tspan x="10" y="506"> 30.  2017-04-07 10:57:17 +0000      140 bytes  benchmark/fixtures/inline-newlines.md</tspan>
-<tspan x="10" y="522"> 31.  2017-04-07 10:57:17 +0000     3790 bytes  benchmark/fixtures/lorem1.txt</tspan>
-<tspan x="10" y="538"> 32.  2017-04-07 10:57:17 +0000      295 bytes  benchmark/fixtures/rawtabs.md</tspan>
-<tspan x="10" y="554"> 33.  2017-04-07 10:57:17 +0000   110711 bytes  benchmark/fixtures/spec.txt</tspan>
-<tspan x="10" y="570"> 34.  2017-04-07 10:57:17 +0000      222 bytes  benchmark/implementations/commonmark-reference/i\</tspan>
+<tspan x="10" y="26">  0.  2017-04-07 10:58:55 +0000  1008277 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-07 10:58:55 +0000     3994 bytes  CHANGELOG.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-07 10:58:55 +0000     1137 bytes  LICENSE</tspan>
+<tspan x="10" y="74">  3.  2017-04-07 10:58:55 +0000     2347 bytes  Makefile</tspan>
+<tspan x="10" y="90">  4.  2017-04-07 10:58:55 +0000     8876 bytes  README.md</tspan>
+<tspan x="10" y="106">  5.  2017-04-07 10:58:55 +0000      246 bytes  benchmark/fixtures/block-bq-flat.md</tspan>
+<tspan x="10" y="122">  6.  2017-04-07 10:58:55 +0000      355 bytes  benchmark/fixtures/block-bq-nested.md</tspan>
+<tspan x="10" y="138">  7.  2017-04-07 10:58:55 +0000       73 bytes  benchmark/fixtures/block-code.md</tspan>
+<tspan x="10" y="154">  8.  2017-04-07 10:58:55 +0000       72 bytes  benchmark/fixtures/block-fences.md</tspan>
+<tspan x="10" y="170">  9.  2017-04-07 10:58:55 +0000      123 bytes  benchmark/fixtures/block-heading.md</tspan>
+<tspan x="10" y="186"> 10.  2017-04-07 10:58:55 +0000       74 bytes  benchmark/fixtures/block-hr.md</tspan>
+<tspan x="10" y="202"> 11.  2017-04-07 10:58:55 +0000      283 bytes  benchmark/fixtures/block-html.md</tspan>
+<tspan x="10" y="218"> 12.  2017-04-07 10:58:55 +0000      113 bytes  benchmark/fixtures/block-lheading.md</tspan>
+<tspan x="10" y="234"> 13.  2017-04-07 10:58:55 +0000      525 bytes  benchmark/fixtures/block-list-flat.md</tspan>
+<tspan x="10" y="250"> 14.  2017-04-07 10:58:55 +0000      391 bytes  benchmark/fixtures/block-list-nested.md</tspan>
+<tspan x="10" y="266"> 15.  2017-04-07 10:58:55 +0000      474 bytes  benchmark/fixtures/block-ref-flat.md</tspan>
+<tspan x="10" y="282"> 16.  2017-04-07 10:58:55 +0000      257 bytes  benchmark/fixtures/block-ref-nested.md</tspan>
+<tspan x="10" y="298"> 17.  2017-04-07 10:58:55 +0000    20244 bytes  benchmark/fixtures/block-tables-large.md</tspan>
+<tspan x="10" y="314"> 18.  2017-04-07 10:58:55 +0000      508 bytes  benchmark/fixtures/block-tables.md</tspan>
+<tspan x="10" y="330"> 19.  2017-04-07 10:58:55 +0000      557 bytes  benchmark/fixtures/inline-autolink.md</tspan>
+<tspan x="10" y="346"> 20.  2017-04-07 10:58:55 +0000       64 bytes  benchmark/fixtures/inline-backticks.md</tspan>
+<tspan x="10" y="362"> 21.  2017-04-07 10:58:55 +0000      155 bytes  benchmark/fixtures/inline-em-flat.md</tspan>
+<tspan x="10" y="378"> 22.  2017-04-07 10:58:55 +0000      158 bytes  benchmark/fixtures/inline-em-nested.md</tspan>
+<tspan x="10" y="394"> 23.  2017-04-07 10:58:55 +0000      173 bytes  benchmark/fixtures/inline-em-worst.md</tspan>
+<tspan x="10" y="410"> 24.  2017-04-07 10:58:55 +0000      328 bytes  benchmark/fixtures/inline-entity.md</tspan>
+<tspan x="10" y="426"> 25.  2017-04-07 10:58:55 +0000      185 bytes  benchmark/fixtures/inline-escape.md</tspan>
+<tspan x="10" y="442"> 26.  2017-04-07 10:58:55 +0000      516 bytes  benchmark/fixtures/inline-html.md</tspan>
+<tspan x="10" y="458"> 27.  2017-04-07 10:58:55 +0000      730 bytes  benchmark/fixtures/inline-links-flat.md</tspan>
+<tspan x="10" y="474"> 28.  2017-04-07 10:58:55 +0000      313 bytes  benchmark/fixtures/inline-links-nested.md</tspan>
+<tspan x="10" y="490"> 29.  2017-04-07 10:58:55 +0000    20248 bytes  benchmark/fixtures/inline-newlines-large.md</tspan>
+<tspan x="10" y="506"> 30.  2017-04-07 10:58:55 +0000      140 bytes  benchmark/fixtures/inline-newlines.md</tspan>
+<tspan x="10" y="522"> 31.  2017-04-07 10:58:55 +0000     3790 bytes  benchmark/fixtures/lorem1.txt</tspan>
+<tspan x="10" y="538"> 32.  2017-04-07 10:58:55 +0000      295 bytes  benchmark/fixtures/rawtabs.md</tspan>
+<tspan x="10" y="554"> 33.  2017-04-07 10:58:55 +0000   110711 bytes  benchmark/fixtures/spec.txt</tspan>
+<tspan x="10" y="570"> 34.  2017-04-07 10:58:55 +0000      222 bytes  benchmark/implementations/commonmark-reference/i\</tspan>
 <tspan x="10" y="586">ndex.js</tspan>
-<tspan x="10" y="602"> 35.  2017-04-07 10:57:17 +0000      152 bytes  benchmark/implementations/current-commonmark/ind\</tspan>
+<tspan x="10" y="602"> 35.  2017-04-07 10:58:55 +0000      152 bytes  benchmark/implementations/current-commonmark/ind\</tspan>
 <tspan x="10" y="618">ex.js</tspan>
-<tspan x="10" y="634"> 36.  2017-04-07 10:57:17 +0000      194 bytes  benchmark/implementations/current/index.js</tspan>
-<tspan x="10" y="650"> 37.  2017-04-07 10:57:17 +0000      107 bytes  benchmark/implementations/marked-0.3.2/index.js</tspan>
-<tspan x="10" y="666"> 38.  2017-04-07 10:57:17 +0000     2982 bytes  benchmark/index.js</tspan>
-<tspan x="10" y="682"> 39.  2017-04-07 10:57:17 +0000      465 bytes  benchmark/profile.js</tspan>
-<tspan x="10" y="698"> 40.  2017-04-07 10:57:17 +0000     1566 bytes  bin/remarkable.js</tspan>
-<tspan x="10" y="714"> 41.  2017-04-07 10:57:17 +0000      528 bytes  bower.json</tspan>
-<tspan x="10" y="730"> 42.  2017-04-07 10:57:17 +0000     2639 bytes  demo/assets/index.css</tspan>
-<tspan x="10" y="746"> 43.  2017-04-07 10:57:17 +0000     9892 bytes  demo/assets/index.js</tspan>
-<tspan x="10" y="762"> 44.  2017-04-07 10:57:17 +0000     2307 bytes  demo/assets/index.styl</tspan>
-<tspan x="10" y="778"> 45.  2017-04-07 10:57:17 +0000     1290 bytes  demo/example.js</tspan>
-<tspan x="10" y="794"> 46.  2017-04-07 10:57:17 +0000     3873 bytes  demo/example.md</tspan>
-<tspan x="10" y="810"> 47.  2017-04-07 10:57:17 +0000    10428 bytes  demo/index.html</tspan>
-<tspan x="10" y="826"> 48.  2017-04-07 10:57:17 +0000     4399 bytes  demo/index.jade</tspan>
-<tspan x="10" y="842"> 49.  2017-04-07 10:57:17 +0000   270770 bytes  dist/remarkable.js</tspan>
-<tspan x="10" y="858"> 50.  2017-04-07 10:57:17 +0000    98059 bytes  dist/remarkable.min.js</tspan>
-<tspan x="10" y="874"> 51.  2017-04-07 10:57:17 +0000     2922 bytes  docs/parser.md</tspan>
-<tspan x="10" y="890"> 52.  2017-04-07 10:57:17 +0000     4777 bytes  docs/parsing_block.md</tspan>
-<tspan x="10" y="906"> 53.  2017-04-07 10:57:17 +0000     1400 bytes  docs/parsing_core.md</tspan>
-<tspan x="10" y="922"> 54.  2017-04-07 10:57:17 +0000     3345 bytes  docs/parsing_inline.md</tspan>
-<tspan x="10" y="938"> 55.  2017-04-07 10:57:17 +0000     2019 bytes  docs/plugins.md</tspan>
-<tspan x="10" y="954"> 56.  2017-04-07 10:57:17 +0000      815 bytes  docs/renderer.md</tspan>
-<tspan x="10" y="970"> 57.  2017-04-07 10:57:17 +0000       51 bytes  index.js</tspan>
-<tspan x="10" y="986"> 58.  2017-04-07 10:57:17 +0000    47369 bytes  lib/common/entities.js</tspan>
-<tspan x="10" y="1002"> 59.  2017-04-07 10:57:17 +0000      778 bytes  lib/common/html_blocks.js</tspan>
-<tspan x="10" y="1018"> 60.  2017-04-07 10:57:17 +0000     1609 bytes  lib/common/html_re.js</tspan>
-<tspan x="10" y="1034"> 61.  2017-04-07 10:57:17 +0000     2010 bytes  lib/common/url_schemas.js</tspan>
-<tspan x="10" y="1050"> 62.  2017-04-07 10:57:17 +0000     3495 bytes  lib/common/utils.js</tspan>
-<tspan x="10" y="1066"> 63.  2017-04-07 10:57:17 +0000     1591 bytes  lib/configs/commonmark.js</tspan>
-<tspan x="10" y="1082"> 64.  2017-04-07 10:57:17 +0000     1780 bytes  lib/configs/default.js</tspan>
-<tspan x="10" y="1098"> 65.  2017-04-07 10:57:17 +0000     1155 bytes  lib/configs/full.js</tspan>
-<tspan x="10" y="1114"> 66.  2017-04-07 10:57:17 +0000      371 bytes  lib/helpers/normalize_link.js</tspan>
-<tspan x="10" y="1130"> 67.  2017-04-07 10:57:17 +0000      269 bytes  lib/helpers/normalize_reference.js</tspan>
-<tspan x="10" y="1146"> 68.  2017-04-07 10:57:17 +0000     1761 bytes  lib/helpers/parse_link_destination.js</tspan>
-<tspan x="10" y="1162"> 69.  2017-04-07 10:57:17 +0000     1139 bytes  lib/helpers/parse_link_label.js</tspan>
-<tspan x="10" y="1178"> 70.  2017-04-07 10:57:17 +0000      978 bytes  lib/helpers/parse_link_title.js</tspan>
-<tspan x="10" y="1194"> 71.  2017-04-07 10:57:17 +0000     4241 bytes  lib/index.js</tspan>
-<tspan x="10" y="1210"> 72.  2017-04-07 10:57:17 +0000     4161 bytes  lib/parser_block.js</tspan>
-<tspan x="10" y="1226"> 73.  2017-04-07 10:57:17 +0000     1263 bytes  lib/parser_core.js</tspan>
-<tspan x="10" y="1242"> 74.  2017-04-07 10:57:17 +0000     3858 bytes  lib/parser_inline.js</tspan>
-<tspan x="10" y="1258"> 75.  2017-04-07 10:57:17 +0000     1473 bytes  lib/renderer.js</tspan>
-<tspan x="10" y="1274"> 76.  2017-04-07 10:57:17 +0000     5392 bytes  lib/ruler.js</tspan>
-<tspan x="10" y="1290"> 77.  2017-04-07 10:57:17 +0000    10180 bytes  lib/rules.js</tspan>
-<tspan x="10" y="1306"> 78.  2017-04-07 10:57:17 +0000     3729 bytes  lib/rules_block/blockquote.js</tspan>
-<tspan x="10" y="1322"> 79.  2017-04-07 10:57:17 +0000      735 bytes  lib/rules_block/code.js</tspan>
-<tspan x="10" y="1338"> 80.  2017-04-07 10:57:17 +0000     5159 bytes  lib/rules_block/deflist.js</tspan>
-<tspan x="10" y="1354"> 81.  2017-04-07 10:57:17 +0000     2212 bytes  lib/rules_block/fences.js</tspan>
-<tspan x="10" y="1370"> 82.  2017-04-07 10:57:17 +0000     2011 bytes  lib/rules_block/footnote.js</tspan>
-<tspan x="10" y="1386"> 83.  2017-04-07 10:57:17 +0000     1434 bytes  lib/rules_block/heading.js</tspan>
-<tspan x="10" y="1402"> 84.  2017-04-07 10:57:17 +0000      924 bytes  lib/rules_block/hr.js</tspan>
-<tspan x="10" y="1418"> 85.  2017-04-07 10:57:17 +0000     1910 bytes  lib/rules_block/htmlblock.js</tspan>
-<tspan x="10" y="1434"> 86.  2017-04-07 10:57:17 +0000     1284 bytes  lib/rules_block/lheading.js</tspan>
-<tspan x="10" y="1450"> 87.  2017-04-07 10:57:17 +0000     6631 bytes  lib/rules_block/list.js</tspan>
-<tspan x="10" y="1466"> 88.  2017-04-07 10:57:17 +0000     1568 bytes  lib/rules_block/paragraph.js</tspan>
-<tspan x="10" y="1482"> 89.  2017-04-07 10:57:17 +0000     3924 bytes  lib/rules_block/state_block.js</tspan>
-<tspan x="10" y="1498"> 90.  2017-04-07 10:57:17 +0000     4127 bytes  lib/rules_block/table.js</tspan>
-<tspan x="10" y="1514"> 91.  2017-04-07 10:57:17 +0000     1956 bytes  lib/rules_core/abbr.js</tspan>
-<tspan x="10" y="1530"> 92.  2017-04-07 10:57:17 +0000     2470 bytes  lib/rules_core/abbr2.js</tspan>
-<tspan x="10" y="1546"> 93.  2017-04-07 10:57:17 +0000      341 bytes  lib/rules_core/block.js</tspan>
-<tspan x="10" y="1562"> 94.  2017-04-07 10:57:17 +0000     2179 bytes  lib/rules_core/footnote_tail.js</tspan>
-<tspan x="10" y="1578"> 95.  2017-04-07 10:57:17 +0000      310 bytes  lib/rules_core/inline.js</tspan>
-<tspan x="10" y="1594"> 96.  2017-04-07 10:57:17 +0000     4003 bytes  lib/rules_core/linkify.js</tspan>
-<tspan x="10" y="1610"> 97.  2017-04-07 10:57:17 +0000     2900 bytes  lib/rules_core/references.js</tspan>
-<tspan x="10" y="1626"> 98.  2017-04-07 10:57:17 +0000     1615 bytes  lib/rules_core/replacements.js</tspan>
-<tspan x="10" y="1642"> 99.  2017-04-07 10:57:17 +0000     3212 bytes  lib/rules_core/smartquotes.js</tspan>
-<tspan x="10" y="1658">100.  2017-04-07 10:57:17 +0000     1892 bytes  lib/rules_inline/autolink.js</tspan>
-<tspan x="10" y="1674">101.  2017-04-07 10:57:17 +0000     1119 bytes  lib/rules_inline/backticks.js</tspan>
-<tspan x="10" y="1690">102.  2017-04-07 10:57:17 +0000     2432 bytes  lib/rules_inline/del.js</tspan>
-<tspan x="10" y="1706">103.  2017-04-07 10:57:17 +0000     3841 bytes  lib/rules_inline/emphasis.js</tspan>
-<tspan x="10" y="1722">104.  2017-04-07 10:57:17 +0000     1432 bytes  lib/rules_inline/entity.js</tspan>
-<tspan x="10" y="1738">105.  2017-04-07 10:57:17 +0000     1023 bytes  lib/rules_inline/escape.js</tspan>
-<tspan x="10" y="1754">106.  2017-04-07 10:57:17 +0000     1480 bytes  lib/rules_inline/footnote_inline.js</tspan>
-<tspan x="10" y="1770">107.  2017-04-07 10:57:17 +0000     1800 bytes  lib/rules_inline/footnote_ref.js</tspan>
-<tspan x="10" y="1786">108.  2017-04-07 10:57:17 +0000     1007 bytes  lib/rules_inline/htmltag.js</tspan>
-<tspan x="10" y="1802">109.  2017-04-07 10:57:17 +0000     2435 bytes  lib/rules_inline/ins.js</tspan>
-<tspan x="10" y="1818">110.  2017-04-07 10:57:17 +0000     4296 bytes  lib/rules_inline/links.js</tspan>
-<tspan x="10" y="1834">111.  2017-04-07 10:57:17 +0000     2440 bytes  lib/rules_inline/mark.js</tspan>
-<tspan x="10" y="1850">112.  2017-04-07 10:57:17 +0000     1378 bytes  lib/rules_inline/newline.js</tspan>
-<tspan x="10" y="1866">113.  2017-04-07 10:57:17 +0000     1973 bytes  lib/rules_inline/state_inline.js</tspan>
-<tspan x="10" y="1882">114.  2017-04-07 10:57:17 +0000     1277 bytes  lib/rules_inline/sub.js</tspan>
-<tspan x="10" y="1898">115.  2017-04-07 10:57:17 +0000     1279 bytes  lib/rules_inline/sup.js</tspan>
-<tspan x="10" y="1914">116.  2017-04-07 10:57:17 +0000     1070 bytes  lib/rules_inline/text.js</tspan>
-<tspan x="10" y="1930">117.  2017-04-07 10:57:17 +0000     6278 bytes  package.json</tspan>
-<tspan x="10" y="1946">118.  2017-04-07 10:57:17 +0000      385 bytes  support/demodata.js</tspan>
-<tspan x="10" y="1962">119.  2017-04-07 10:57:17 +0000     1138 bytes  support/entities.js</tspan>
-<tspan x="10" y="1978">120.  2017-04-07 10:57:17 +0000     2610 bytes  support/specsplit.js</tspan>
-<tspan x="10" y="1994">121.  2017-04-07 10:57:17 +0000      281 bytes  test/commonmark.js</tspan>
-<tspan x="10" y="2010">122.  2017-04-07 10:57:17 +0000     1622 bytes  test/fixtures/commonmark/bad.txt</tspan>
-<tspan x="10" y="2026">123.  2017-04-07 10:57:17 +0000    60935 bytes  test/fixtures/commonmark/good.txt</tspan>
-<tspan x="10" y="2042">124.  2017-04-07 10:57:17 +0000   116680 bytes  test/fixtures/commonmark/spec.txt</tspan>
-<tspan x="10" y="2058">125.  2017-04-07 10:57:17 +0000     1413 bytes  test/fixtures/remarkable/abbr.txt</tspan>
-<tspan x="10" y="2074">126.  2017-04-07 10:57:17 +0000     1992 bytes  test/fixtures/remarkable/commonmark_extras.txt</tspan>
-<tspan x="10" y="2090">127.  2017-04-07 10:57:17 +0000     1689 bytes  test/fixtures/remarkable/deflist.txt</tspan>
-<tspan x="10" y="2106">128.  2017-04-07 10:57:17 +0000      931 bytes  test/fixtures/remarkable/del.txt</tspan>
-<tspan x="10" y="2122">129.  2017-04-07 10:57:17 +0000     4680 bytes  test/fixtures/remarkable/footnotes.txt</tspan>
-<tspan x="10" y="2138">130.  2017-04-07 10:57:17 +0000     1069 bytes  test/fixtures/remarkable/ins.txt</tspan>
-<tspan x="10" y="2154">131.  2017-04-07 10:57:17 +0000     1023 bytes  test/fixtures/remarkable/linkify.txt</tspan>
-<tspan x="10" y="2170">132.  2017-04-07 10:57:17 +0000     1066 bytes  test/fixtures/remarkable/mark.txt</tspan>
-<tspan x="10" y="2186">133.  2017-04-07 10:57:17 +0000     1036 bytes  test/fixtures/remarkable/proto.txt</tspan>
-<tspan x="10" y="2202">134.  2017-04-07 10:57:17 +0000     1068 bytes  test/fixtures/remarkable/smartquotes.txt</tspan>
-<tspan x="10" y="2218">135.  2017-04-07 10:57:17 +0000      251 bytes  test/fixtures/remarkable/sub.txt</tspan>
-<tspan x="10" y="2234">136.  2017-04-07 10:57:17 +0000      311 bytes  test/fixtures/remarkable/sup.txt</tspan>
-<tspan x="10" y="2250">137.  2017-04-07 10:57:17 +0000     2521 bytes  test/fixtures/remarkable/tables.txt</tspan>
-<tspan x="10" y="2266">138.  2017-04-07 10:57:17 +0000      640 bytes  test/fixtures/remarkable/typographer.txt</tspan>
-<tspan x="10" y="2282">139.  2017-04-07 10:57:17 +0000     1255 bytes  test/fixtures/remarkable/xss.txt</tspan>
-<tspan x="10" y="2298">140.  2017-04-07 10:57:17 +0000     6883 bytes  test/misc.js</tspan>
-<tspan x="10" y="2314">141.  2017-04-07 10:57:17 +0000      361 bytes  test/remarkable.js</tspan>
-<tspan x="10" y="2330">142.  2017-04-07 10:57:17 +0000     3696 bytes  test/ruler.js</tspan>
-<tspan x="10" y="2346">143.  2017-04-07 10:57:17 +0000     1125 bytes  test/utils.js</tspan>
+<tspan x="10" y="634"> 36.  2017-04-07 10:58:55 +0000      194 bytes  benchmark/implementations/current/index.js</tspan>
+<tspan x="10" y="650"> 37.  2017-04-07 10:58:55 +0000      107 bytes  benchmark/implementations/marked-0.3.2/index.js</tspan>
+<tspan x="10" y="666"> 38.  2017-04-07 10:58:55 +0000     2982 bytes  benchmark/index.js</tspan>
+<tspan x="10" y="682"> 39.  2017-04-07 10:58:55 +0000      465 bytes  benchmark/profile.js</tspan>
+<tspan x="10" y="698"> 40.  2017-04-07 10:58:55 +0000     1566 bytes  bin/remarkable.js</tspan>
+<tspan x="10" y="714"> 41.  2017-04-07 10:58:55 +0000      528 bytes  bower.json</tspan>
+<tspan x="10" y="730"> 42.  2017-04-07 10:58:55 +0000     2639 bytes  demo/assets/index.css</tspan>
+<tspan x="10" y="746"> 43.  2017-04-07 10:58:55 +0000     9892 bytes  demo/assets/index.js</tspan>
+<tspan x="10" y="762"> 44.  2017-04-07 10:58:55 +0000     2307 bytes  demo/assets/index.styl</tspan>
+<tspan x="10" y="778"> 45.  2017-04-07 10:58:55 +0000     1290 bytes  demo/example.js</tspan>
+<tspan x="10" y="794"> 46.  2017-04-07 10:58:55 +0000     3873 bytes  demo/example.md</tspan>
+<tspan x="10" y="810"> 47.  2017-04-07 10:58:55 +0000    10428 bytes  demo/index.html</tspan>
+<tspan x="10" y="826"> 48.  2017-04-07 10:58:55 +0000     4399 bytes  demo/index.jade</tspan>
+<tspan x="10" y="842"> 49.  2017-04-07 10:58:55 +0000   270770 bytes  dist/remarkable.js</tspan>
+<tspan x="10" y="858"> 50.  2017-04-07 10:58:55 +0000    98059 bytes  dist/remarkable.min.js</tspan>
+<tspan x="10" y="874"> 51.  2017-04-07 10:58:55 +0000     2922 bytes  docs/parser.md</tspan>
+<tspan x="10" y="890"> 52.  2017-04-07 10:58:55 +0000     4777 bytes  docs/parsing_block.md</tspan>
+<tspan x="10" y="906"> 53.  2017-04-07 10:58:55 +0000     1400 bytes  docs/parsing_core.md</tspan>
+<tspan x="10" y="922"> 54.  2017-04-07 10:58:55 +0000     3345 bytes  docs/parsing_inline.md</tspan>
+<tspan x="10" y="938"> 55.  2017-04-07 10:58:55 +0000     2019 bytes  docs/plugins.md</tspan>
+<tspan x="10" y="954"> 56.  2017-04-07 10:58:55 +0000      815 bytes  docs/renderer.md</tspan>
+<tspan x="10" y="970"> 57.  2017-04-07 10:58:55 +0000       51 bytes  index.js</tspan>
+<tspan x="10" y="986"> 58.  2017-04-07 10:58:55 +0000    47369 bytes  lib/common/entities.js</tspan>
+<tspan x="10" y="1002"> 59.  2017-04-07 10:58:55 +0000      778 bytes  lib/common/html_blocks.js</tspan>
+<tspan x="10" y="1018"> 60.  2017-04-07 10:58:55 +0000     1609 bytes  lib/common/html_re.js</tspan>
+<tspan x="10" y="1034"> 61.  2017-04-07 10:58:55 +0000     2010 bytes  lib/common/url_schemas.js</tspan>
+<tspan x="10" y="1050"> 62.  2017-04-07 10:58:55 +0000     3495 bytes  lib/common/utils.js</tspan>
+<tspan x="10" y="1066"> 63.  2017-04-07 10:58:55 +0000     1591 bytes  lib/configs/commonmark.js</tspan>
+<tspan x="10" y="1082"> 64.  2017-04-07 10:58:55 +0000     1780 bytes  lib/configs/default.js</tspan>
+<tspan x="10" y="1098"> 65.  2017-04-07 10:58:55 +0000     1155 bytes  lib/configs/full.js</tspan>
+<tspan x="10" y="1114"> 66.  2017-04-07 10:58:55 +0000      371 bytes  lib/helpers/normalize_link.js</tspan>
+<tspan x="10" y="1130"> 67.  2017-04-07 10:58:55 +0000      269 bytes  lib/helpers/normalize_reference.js</tspan>
+<tspan x="10" y="1146"> 68.  2017-04-07 10:58:55 +0000     1761 bytes  lib/helpers/parse_link_destination.js</tspan>
+<tspan x="10" y="1162"> 69.  2017-04-07 10:58:55 +0000     1139 bytes  lib/helpers/parse_link_label.js</tspan>
+<tspan x="10" y="1178"> 70.  2017-04-07 10:58:55 +0000      978 bytes  lib/helpers/parse_link_title.js</tspan>
+<tspan x="10" y="1194"> 71.  2017-04-07 10:58:55 +0000     4241 bytes  lib/index.js</tspan>
+<tspan x="10" y="1210"> 72.  2017-04-07 10:58:55 +0000     4161 bytes  lib/parser_block.js</tspan>
+<tspan x="10" y="1226"> 73.  2017-04-07 10:58:55 +0000     1263 bytes  lib/parser_core.js</tspan>
+<tspan x="10" y="1242"> 74.  2017-04-07 10:58:55 +0000     3858 bytes  lib/parser_inline.js</tspan>
+<tspan x="10" y="1258"> 75.  2017-04-07 10:58:55 +0000     1473 bytes  lib/renderer.js</tspan>
+<tspan x="10" y="1274"> 76.  2017-04-07 10:58:55 +0000     5392 bytes  lib/ruler.js</tspan>
+<tspan x="10" y="1290"> 77.  2017-04-07 10:58:55 +0000    10180 bytes  lib/rules.js</tspan>
+<tspan x="10" y="1306"> 78.  2017-04-07 10:58:55 +0000     3729 bytes  lib/rules_block/blockquote.js</tspan>
+<tspan x="10" y="1322"> 79.  2017-04-07 10:58:55 +0000      735 bytes  lib/rules_block/code.js</tspan>
+<tspan x="10" y="1338"> 80.  2017-04-07 10:58:55 +0000     5159 bytes  lib/rules_block/deflist.js</tspan>
+<tspan x="10" y="1354"> 81.  2017-04-07 10:58:55 +0000     2212 bytes  lib/rules_block/fences.js</tspan>
+<tspan x="10" y="1370"> 82.  2017-04-07 10:58:55 +0000     2011 bytes  lib/rules_block/footnote.js</tspan>
+<tspan x="10" y="1386"> 83.  2017-04-07 10:58:55 +0000     1434 bytes  lib/rules_block/heading.js</tspan>
+<tspan x="10" y="1402"> 84.  2017-04-07 10:58:55 +0000      924 bytes  lib/rules_block/hr.js</tspan>
+<tspan x="10" y="1418"> 85.  2017-04-07 10:58:55 +0000     1910 bytes  lib/rules_block/htmlblock.js</tspan>
+<tspan x="10" y="1434"> 86.  2017-04-07 10:58:55 +0000     1284 bytes  lib/rules_block/lheading.js</tspan>
+<tspan x="10" y="1450"> 87.  2017-04-07 10:58:55 +0000     6631 bytes  lib/rules_block/list.js</tspan>
+<tspan x="10" y="1466"> 88.  2017-04-07 10:58:55 +0000     1568 bytes  lib/rules_block/paragraph.js</tspan>
+<tspan x="10" y="1482"> 89.  2017-04-07 10:58:55 +0000     3924 bytes  lib/rules_block/state_block.js</tspan>
+<tspan x="10" y="1498"> 90.  2017-04-07 10:58:55 +0000     4127 bytes  lib/rules_block/table.js</tspan>
+<tspan x="10" y="1514"> 91.  2017-04-07 10:58:55 +0000     1956 bytes  lib/rules_core/abbr.js</tspan>
+<tspan x="10" y="1530"> 92.  2017-04-07 10:58:55 +0000     2470 bytes  lib/rules_core/abbr2.js</tspan>
+<tspan x="10" y="1546"> 93.  2017-04-07 10:58:55 +0000      341 bytes  lib/rules_core/block.js</tspan>
+<tspan x="10" y="1562"> 94.  2017-04-07 10:58:55 +0000     2179 bytes  lib/rules_core/footnote_tail.js</tspan>
+<tspan x="10" y="1578"> 95.  2017-04-07 10:58:55 +0000      310 bytes  lib/rules_core/inline.js</tspan>
+<tspan x="10" y="1594"> 96.  2017-04-07 10:58:55 +0000     4003 bytes  lib/rules_core/linkify.js</tspan>
+<tspan x="10" y="1610"> 97.  2017-04-07 10:58:55 +0000     2900 bytes  lib/rules_core/references.js</tspan>
+<tspan x="10" y="1626"> 98.  2017-04-07 10:58:55 +0000     1615 bytes  lib/rules_core/replacements.js</tspan>
+<tspan x="10" y="1642"> 99.  2017-04-07 10:58:55 +0000     3212 bytes  lib/rules_core/smartquotes.js</tspan>
+<tspan x="10" y="1658">100.  2017-04-07 10:58:55 +0000     1892 bytes  lib/rules_inline/autolink.js</tspan>
+<tspan x="10" y="1674">101.  2017-04-07 10:58:55 +0000     1119 bytes  lib/rules_inline/backticks.js</tspan>
+<tspan x="10" y="1690">102.  2017-04-07 10:58:55 +0000     2432 bytes  lib/rules_inline/del.js</tspan>
+<tspan x="10" y="1706">103.  2017-04-07 10:58:55 +0000     3841 bytes  lib/rules_inline/emphasis.js</tspan>
+<tspan x="10" y="1722">104.  2017-04-07 10:58:55 +0000     1432 bytes  lib/rules_inline/entity.js</tspan>
+<tspan x="10" y="1738">105.  2017-04-07 10:58:55 +0000     1023 bytes  lib/rules_inline/escape.js</tspan>
+<tspan x="10" y="1754">106.  2017-04-07 10:58:55 +0000     1480 bytes  lib/rules_inline/footnote_inline.js</tspan>
+<tspan x="10" y="1770">107.  2017-04-07 10:58:55 +0000     1800 bytes  lib/rules_inline/footnote_ref.js</tspan>
+<tspan x="10" y="1786">108.  2017-04-07 10:58:55 +0000     1007 bytes  lib/rules_inline/htmltag.js</tspan>
+<tspan x="10" y="1802">109.  2017-04-07 10:58:55 +0000     2435 bytes  lib/rules_inline/ins.js</tspan>
+<tspan x="10" y="1818">110.  2017-04-07 10:58:55 +0000     4296 bytes  lib/rules_inline/links.js</tspan>
+<tspan x="10" y="1834">111.  2017-04-07 10:58:55 +0000     2440 bytes  lib/rules_inline/mark.js</tspan>
+<tspan x="10" y="1850">112.  2017-04-07 10:58:55 +0000     1378 bytes  lib/rules_inline/newline.js</tspan>
+<tspan x="10" y="1866">113.  2017-04-07 10:58:55 +0000     1973 bytes  lib/rules_inline/state_inline.js</tspan>
+<tspan x="10" y="1882">114.  2017-04-07 10:58:55 +0000     1277 bytes  lib/rules_inline/sub.js</tspan>
+<tspan x="10" y="1898">115.  2017-04-07 10:58:55 +0000     1279 bytes  lib/rules_inline/sup.js</tspan>
+<tspan x="10" y="1914">116.  2017-04-07 10:58:55 +0000     1070 bytes  lib/rules_inline/text.js</tspan>
+<tspan x="10" y="1930">117.  2017-04-07 10:58:55 +0000     6278 bytes  package.json</tspan>
+<tspan x="10" y="1946">118.  2017-04-07 10:58:55 +0000      385 bytes  support/demodata.js</tspan>
+<tspan x="10" y="1962">119.  2017-04-07 10:58:55 +0000     1138 bytes  support/entities.js</tspan>
+<tspan x="10" y="1978">120.  2017-04-07 10:58:55 +0000     2610 bytes  support/specsplit.js</tspan>
+<tspan x="10" y="1994">121.  2017-04-07 10:58:55 +0000      281 bytes  test/commonmark.js</tspan>
+<tspan x="10" y="2010">122.  2017-04-07 10:58:55 +0000     1622 bytes  test/fixtures/commonmark/bad.txt</tspan>
+<tspan x="10" y="2026">123.  2017-04-07 10:58:55 +0000    60935 bytes  test/fixtures/commonmark/good.txt</tspan>
+<tspan x="10" y="2042">124.  2017-04-07 10:58:55 +0000   116680 bytes  test/fixtures/commonmark/spec.txt</tspan>
+<tspan x="10" y="2058">125.  2017-04-07 10:58:55 +0000     1413 bytes  test/fixtures/remarkable/abbr.txt</tspan>
+<tspan x="10" y="2074">126.  2017-04-07 10:58:55 +0000     1992 bytes  test/fixtures/remarkable/commonmark_extras.txt</tspan>
+<tspan x="10" y="2090">127.  2017-04-07 10:58:55 +0000     1689 bytes  test/fixtures/remarkable/deflist.txt</tspan>
+<tspan x="10" y="2106">128.  2017-04-07 10:58:55 +0000      931 bytes  test/fixtures/remarkable/del.txt</tspan>
+<tspan x="10" y="2122">129.  2017-04-07 10:58:55 +0000     4680 bytes  test/fixtures/remarkable/footnotes.txt</tspan>
+<tspan x="10" y="2138">130.  2017-04-07 10:58:55 +0000     1069 bytes  test/fixtures/remarkable/ins.txt</tspan>
+<tspan x="10" y="2154">131.  2017-04-07 10:58:55 +0000     1023 bytes  test/fixtures/remarkable/linkify.txt</tspan>
+<tspan x="10" y="2170">132.  2017-04-07 10:58:55 +0000     1066 bytes  test/fixtures/remarkable/mark.txt</tspan>
+<tspan x="10" y="2186">133.  2017-04-07 10:58:55 +0000     1036 bytes  test/fixtures/remarkable/proto.txt</tspan>
+<tspan x="10" y="2202">134.  2017-04-07 10:58:55 +0000     1068 bytes  test/fixtures/remarkable/smartquotes.txt</tspan>
+<tspan x="10" y="2218">135.  2017-04-07 10:58:55 +0000      251 bytes  test/fixtures/remarkable/sub.txt</tspan>
+<tspan x="10" y="2234">136.  2017-04-07 10:58:55 +0000      311 bytes  test/fixtures/remarkable/sup.txt</tspan>
+<tspan x="10" y="2250">137.  2017-04-07 10:58:55 +0000     2521 bytes  test/fixtures/remarkable/tables.txt</tspan>
+<tspan x="10" y="2266">138.  2017-04-07 10:58:55 +0000      640 bytes  test/fixtures/remarkable/typographer.txt</tspan>
+<tspan x="10" y="2282">139.  2017-04-07 10:58:55 +0000     1255 bytes  test/fixtures/remarkable/xss.txt</tspan>
+<tspan x="10" y="2298">140.  2017-04-07 10:58:55 +0000     6883 bytes  test/misc.js</tspan>
+<tspan x="10" y="2314">141.  2017-04-07 10:58:55 +0000      361 bytes  test/remarkable.js</tspan>
+<tspan x="10" y="2330">142.  2017-04-07 10:58:55 +0000     3696 bytes  test/ruler.js</tspan>
+<tspan x="10" y="2346">143.  2017-04-07 10:58:55 +0000     1125 bytes  test/utils.js</tspan>
 </text>
 </svg>
