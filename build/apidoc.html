@@ -1,0 +1,3250 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/jonschlinkert/remarkable"
+
+    >remarkable (v1.7.1)</a>
+</h1>
+<h4>Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins, high speed - all in one.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable">module remarkable</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_block">
+            function <span class="apidocSignatureSpan">remarkable.</span>parser_block
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_core">
+            function <span class="apidocSignatureSpan">remarkable.</span>parser_core
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_inline">
+            function <span class="apidocSignatureSpan">remarkable.</span>parser_inline
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.renderer">
+            function <span class="apidocSignatureSpan">remarkable.</span>renderer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler">
+            function <span class="apidocSignatureSpan">remarkable.</span>ruler
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>parser_block.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>parser_core.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>parser_inline.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>renderer.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>ruler.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>rules</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.parser_block">module remarkable.parser_block</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_block.parser_block">
+            function <span class="apidocSignatureSpan">remarkable.</span>parser_block
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.parser_block.prototype">module remarkable.parser_block.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_block.prototype.parse">
+            function <span class="apidocSignatureSpan">remarkable.parser_block.prototype.</span>parse
+            <span class="apidocSignatureSpan">(str, options, env, outTokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_block.prototype.tokenize">
+            function <span class="apidocSignatureSpan">remarkable.parser_block.prototype.</span>tokenize
+            <span class="apidocSignatureSpan">(state, startLine, endLine)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.parser_core">module remarkable.parser_core</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_core.parser_core">
+            function <span class="apidocSignatureSpan">remarkable.</span>parser_core
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.parser_core.prototype">module remarkable.parser_core.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_core.prototype.process">
+            function <span class="apidocSignatureSpan">remarkable.parser_core.prototype.</span>process
+            <span class="apidocSignatureSpan">(state)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.parser_inline">module remarkable.parser_inline</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_inline.parser_inline">
+            function <span class="apidocSignatureSpan">remarkable.</span>parser_inline
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.parser_inline.prototype">module remarkable.parser_inline.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_inline.prototype.parse">
+            function <span class="apidocSignatureSpan">remarkable.parser_inline.prototype.</span>parse
+            <span class="apidocSignatureSpan">(str, options, env, outTokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_inline.prototype.skipToken">
+            function <span class="apidocSignatureSpan">remarkable.parser_inline.prototype.</span>skipToken
+            <span class="apidocSignatureSpan">(state)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_inline.prototype.tokenize">
+            function <span class="apidocSignatureSpan">remarkable.parser_inline.prototype.</span>tokenize
+            <span class="apidocSignatureSpan">(state)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.renderer">module remarkable.renderer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.renderer.renderer">
+            function <span class="apidocSignatureSpan">remarkable.</span>renderer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.renderer.prototype">module remarkable.renderer.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.renderer.prototype.render">
+            function <span class="apidocSignatureSpan">remarkable.renderer.prototype.</span>render
+            <span class="apidocSignatureSpan">(tokens, options, env)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.renderer.prototype.renderInline">
+            function <span class="apidocSignatureSpan">remarkable.renderer.prototype.</span>renderInline
+            <span class="apidocSignatureSpan">(tokens, options, env)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.ruler">module remarkable.ruler</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler.ruler">
+            function <span class="apidocSignatureSpan">remarkable.</span>ruler
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.ruler.prototype">module remarkable.ruler.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler.prototype.__compile__">
+            function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>__compile__
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler.prototype.__find__">
+            function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>__find__
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler.prototype.after">
+            function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>after
+            <span class="apidocSignatureSpan">(afterName, ruleName, fn, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler.prototype.at">
+            function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>at
+            <span class="apidocSignatureSpan">(name, fn, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler.prototype.before">
+            function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>before
+            <span class="apidocSignatureSpan">(beforeName, ruleName, fn, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler.prototype.disable">
+            function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>disable
+            <span class="apidocSignatureSpan">(list)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler.prototype.enable">
+            function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>enable
+            <span class="apidocSignatureSpan">(list, strict)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler.prototype.getRules">
+            function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>getRules
+            <span class="apidocSignatureSpan">(chainName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.ruler.prototype.push">
+            function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>push
+            <span class="apidocSignatureSpan">(ruleName, fn, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.rules">module remarkable.rules</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.abbr_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>abbr_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.abbr_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>abbr_open
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.blockquote_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>blockquote_close
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.blockquote_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>blockquote_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.bullet_list_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>bullet_list_close
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.bullet_list_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>bullet_list_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.code">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>code
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.dd_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>dd_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.dd_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>dd_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.del_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>del_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.del_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>del_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.dl_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>dl_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.dl_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>dl_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.dt_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>dt_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.dt_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>dt_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.em_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>em_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.em_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>em_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.fence">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>fence
+            <span class="apidocSignatureSpan">(tokens, idx, options, env, instance)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.footnote_anchor">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_anchor
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.footnote_block_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_block_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.footnote_block_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_block_open
+            <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.footnote_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.footnote_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_open
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.footnote_ref">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_ref
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.getBreak">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>getBreak
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.hardbreak">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>hardbreak
+            <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.heading_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>heading_close
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.heading_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>heading_open
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.hr">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>hr
+            <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.htmlblock">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>htmlblock
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.htmltag">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>htmltag
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.image">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>image
+            <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.ins_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>ins_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.ins_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>ins_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.link_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>link_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.link_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>link_open
+            <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.list_item_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>list_item_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.list_item_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>list_item_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.mark_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>mark_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.mark_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>mark_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.ordered_list_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>ordered_list_close
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.ordered_list_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>ordered_list_open
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.paragraph_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>paragraph_close
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.paragraph_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>paragraph_open
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.softbreak">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>softbreak
+            <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.strong_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>strong_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.strong_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>strong_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.sub">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>sub
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.sup">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>sup
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.table_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>table_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.table_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>table_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.tbody_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>tbody_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.tbody_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>tbody_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.td_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>td_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.td_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>td_open
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.text">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>text
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.th_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>th_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.th_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>th_open
+            <span class="apidocSignatureSpan">(tokens, idx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.thead_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>thead_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.thead_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>thead_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.tr_close">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>tr_close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.rules.tr_open">
+            function <span class="apidocSignatureSpan">remarkable.rules.</span>tr_open
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.rules.</span>fence_custom</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.utils">module remarkable.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.utils.assign">
+            function <span class="apidocSignatureSpan">remarkable.utils.</span>assign
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.utils.escapeHtml">
+            function <span class="apidocSignatureSpan">remarkable.utils.</span>escapeHtml
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.utils.fromCodePoint">
+            function <span class="apidocSignatureSpan">remarkable.utils.</span>fromCodePoint
+            <span class="apidocSignatureSpan">(c)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.utils.has">
+            function <span class="apidocSignatureSpan">remarkable.utils.</span>has
+            <span class="apidocSignatureSpan">(object, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.utils.isString">
+            function <span class="apidocSignatureSpan">remarkable.utils.</span>isString
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.utils.isValidEntityCode">
+            function <span class="apidocSignatureSpan">remarkable.utils.</span>isValidEntityCode
+            <span class="apidocSignatureSpan">(c)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.utils.replaceEntities">
+            function <span class="apidocSignatureSpan">remarkable.utils.</span>replaceEntities
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.utils.unescapeMd">
+            function <span class="apidocSignatureSpan">remarkable.utils.</span>unescapeMd
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable" id="apidoc.module.remarkable">module remarkable</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_block" id="apidoc.element.remarkable.parser_block">
+        function <span class="apidocSignatureSpan">remarkable.</span>parser_block
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParserBlock() {
+  this.ruler = new Ruler();
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1], {
+      alt: (_rules[i][2] || []).slice()
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_core" id="apidoc.element.remarkable.parser_core">
+        function <span class="apidocSignatureSpan">remarkable.</span>parser_core
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Core() {
+  this.options = {};
+  this.ruler = new Ruler();
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1]);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_inline" id="apidoc.element.remarkable.parser_inline">
+        function <span class="apidocSignatureSpan">remarkable.</span>parser_inline
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParserInline() {
+  this.ruler = new Ruler();
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1]);
+  }
+
+  // Can be overridden with a custom validator
+  this.validateLink = validateLink;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.renderer" id="apidoc.element.remarkable.renderer">
+        function <span class="apidocSignatureSpan">remarkable.</span>renderer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Renderer() {
+  this.rules = utils.assign({}, rules);
+
+  // exported helper, for custom rules only
+  this.getBreak = rules.getBreak;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler" id="apidoc.element.remarkable.ruler">
+        function <span class="apidocSignatureSpan">remarkable.</span>ruler
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Ruler() {
+  // List of added rules. Each element is:
+  //
+  // { name: XXX,
+  //   enabled: Boolean,
+  //   fn: Function(),
+  //   alt: [ name2, name3 ] }
+  //
+  this.__rules__ = [];
+
+  // Cached rule chains.
+  //
+  // First level - chain name, &#x27;&#x27; for default.
+  // Second level - digital anchor for fast filtering by charcodes.
+  //
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.parser_block" id="apidoc.module.remarkable.parser_block">module remarkable.parser_block</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_block.parser_block" id="apidoc.element.remarkable.parser_block.parser_block">
+        function <span class="apidocSignatureSpan">remarkable.</span>parser_block
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParserBlock() {
+  this.ruler = new Ruler();
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1], {
+      alt: (_rules[i][2] || []).slice()
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.parser_block.prototype" id="apidoc.module.remarkable.parser_block.prototype">module remarkable.parser_block.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_block.prototype.parse" id="apidoc.element.remarkable.parser_block.prototype.parse">
+        function <span class="apidocSignatureSpan">remarkable.parser_block.prototype.</span>parse
+        <span class="apidocSignatureSpan">(str, options, env, outTokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (str, options, env, outTokens) {
+  var state, lineStart = 0, lastTabPos = 0;
+  if (!str) { return []; }
+
+  // Normalize spaces
+  str = str.replace(SPACES_RE, &#x27; &#x27;);
+
+  // Normalize newlines
+  str = str.replace(NEWLINES_RE, &#x27;\n&#x27;);
+
+  // Replace tabs with proper number of spaces (1..4)
+  if (str.indexOf(&#x27;\t&#x27;) &#x3e;= 0) {
+    str = str.replace(TABS_SCAN_RE, function (match, offset) {
+      var result;
+      if (str.charCodeAt(offset) === 0x0A) {
+        lineStart = offset + 1;
+        lastTabPos = 0;
+        return match;
+      }
+      result = &#x27;    &#x27;.slice((offset - lineStart - lastTabPos) % 4);
+      lastTabPos = offset - lineStart + 1;
+      return result;
+    });
+  }
+
+  state = new StateBlock(str, this, options, env, outTokens);
+  this.tokenize(state, state.line, state.lineMax);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+http.get(&#x27;http://www.w3.org/TR/html5/entities.json&#x27;, function (res) {
+  var body = &#x27;&#x27;;
+  res.on(&#x27;data&#x27;, function(chunk) {
+    body += chunk;
+  });
+  res.on(&#x27;end&#x27;, function() {
+    var entities = JSON.<span class="apidocCodeKeywordSpan">parse</span>(body);
+    var out = {};
+
+    Object.keys(entities).forEach(function (entity) {
+// Skip legacy - not allosed in markdown
+if (entity[entity.length - 1] !== &#x27;;&#x27;) { return; }
+
+out[entity.slice(1, -1)] = strToUni(entities[entity].characters);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_block.prototype.tokenize" id="apidoc.element.remarkable.parser_block.prototype.tokenize">
+        function <span class="apidocSignatureSpan">remarkable.parser_block.prototype.</span>tokenize
+        <span class="apidocSignatureSpan">(state, startLine, endLine)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tokenize = function (state, startLine, endLine) {
+  var rules = this.ruler.getRules(&#x27;&#x27;);
+  var len = rules.length;
+  var line = startLine;
+  var hasEmptyLines = false;
+  var ok, i;
+
+  while (line &#x3c; endLine) {
+    state.line = line = state.skipEmptyLines(line);
+    if (line &#x3e;= endLine) {
+      break;
+    }
+
+    // Termination condition for nested calls.
+    // Nested calls currently used for blockquotes &#x26; lists
+    if (state.tShift[line] &#x3c; state.blkIndent) {
+      break;
+    }
+
+    // Try all possible rules.
+    // On success, rule should:
+    //
+    // - update `state.line`
+    // - update `state.tokens`
+    // - return true
+
+    for (i = 0; i &#x3c; len; i++) {
+      ok = rules[i](state, line, endLine, false);
+      if (ok) {
+        break;
+      }
+    }
+
+    // set state.tight iff we had an empty line before current tag
+    // i.e. latest empty line should not count
+    state.tight = !hasEmptyLines;
+
+    // paragraph might &#x22;eat&#x22; one newline after it in nested lists
+    if (state.isEmpty(state.line - 1)) {
+      hasEmptyLines = true;
+    }
+
+    line = state.line;
+
+    if (line &#x3c; endLine &#x26;&#x26; state.isEmpty(line)) {
+      hasEmptyLines = true;
+      line++;
+
+      // two empty lines should stop the parser in list mode
+      if (line &#x3c; endLine &#x26;&#x26; state.parentType === &#x27;list&#x27; &#x26;&#x26; state.isEmpty(line)) { break; }
+      state.line = line;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      result = &#x27;    &#x27;.slice((offset - lineStart - lastTabPos) % 4);
+      lastTabPos = offset - lineStart + 1;
+      return result;
+    });
+  }
+
+  state = new StateBlock(str, this, options, env, outTokens);
+  this.<span class="apidocCodeKeywordSpan">tokenize</span>(state, state.line, state.lineMax);
+};
+
+/**
+ * Expose `ParserBlock`
+ */
+
+module.exports = ParserBlock;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.parser_core" id="apidoc.module.remarkable.parser_core">module remarkable.parser_core</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_core.parser_core" id="apidoc.element.remarkable.parser_core.parser_core">
+        function <span class="apidocSignatureSpan">remarkable.</span>parser_core
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Core() {
+  this.options = {};
+  this.ruler = new Ruler();
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1]);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.parser_core.prototype" id="apidoc.module.remarkable.parser_core.prototype">module remarkable.parser_core.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_core.prototype.process" id="apidoc.element.remarkable.parser_core.prototype.process">
+        function <span class="apidocSignatureSpan">remarkable.parser_core.prototype.</span>process
+        <span class="apidocSignatureSpan">(state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">process = function (state) {
+  var i, l, rules;
+  rules = this.ruler.getRules(&#x27;&#x27;);
+  for (i = 0, l = rules.length; i &#x3c; l; i++) {
+    rules[i](state);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.parser_inline" id="apidoc.module.remarkable.parser_inline">module remarkable.parser_inline</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_inline.parser_inline" id="apidoc.element.remarkable.parser_inline.parser_inline">
+        function <span class="apidocSignatureSpan">remarkable.</span>parser_inline
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParserInline() {
+  this.ruler = new Ruler();
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1]);
+  }
+
+  // Can be overridden with a custom validator
+  this.validateLink = validateLink;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.parser_inline.prototype" id="apidoc.module.remarkable.parser_inline.prototype">module remarkable.parser_inline.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_inline.prototype.parse" id="apidoc.element.remarkable.parser_inline.prototype.parse">
+        function <span class="apidocSignatureSpan">remarkable.parser_inline.prototype.</span>parse
+        <span class="apidocSignatureSpan">(str, options, env, outTokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (str, options, env, outTokens) {
+  var state = new StateInline(str, this, options, env, outTokens);
+  this.tokenize(state);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+http.get(&#x27;http://www.w3.org/TR/html5/entities.json&#x27;, function (res) {
+  var body = &#x27;&#x27;;
+  res.on(&#x27;data&#x27;, function(chunk) {
+    body += chunk;
+  });
+  res.on(&#x27;end&#x27;, function() {
+    var entities = JSON.<span class="apidocCodeKeywordSpan">parse</span>(body);
+    var out = {};
+
+    Object.keys(entities).forEach(function (entity) {
+// Skip legacy - not allosed in markdown
+if (entity[entity.length - 1] !== &#x27;;&#x27;) { return; }
+
+out[entity.slice(1, -1)] = strToUni(entities[entity].characters);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_inline.prototype.skipToken" id="apidoc.element.remarkable.parser_inline.prototype.skipToken">
+        function <span class="apidocSignatureSpan">remarkable.parser_inline.prototype.</span>skipToken
+        <span class="apidocSignatureSpan">(state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">skipToken = function (state) {
+  var rules = this.ruler.getRules(&#x27;&#x27;);
+  var len = rules.length;
+  var pos = state.pos;
+  var i, cached_pos;
+
+  if ((cached_pos = state.cacheGet(pos)) &#x3e; 0) {
+    state.pos = cached_pos;
+    return;
+  }
+
+  for (i = 0; i &#x3c; len; i++) {
+    if (rules[i](state, true)) {
+      state.cacheSet(pos, state.pos);
+      return;
+    }
+  }
+
+  state.pos++;
+  state.cacheSet(pos, state.pos);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.parser_inline.prototype.tokenize" id="apidoc.element.remarkable.parser_inline.prototype.tokenize">
+        function <span class="apidocSignatureSpan">remarkable.parser_inline.prototype.</span>tokenize
+        <span class="apidocSignatureSpan">(state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tokenize = function (state) {
+  var rules = this.ruler.getRules(&#x27;&#x27;);
+  var len = rules.length;
+  var end = state.posMax;
+  var ok, i;
+
+  while (state.pos &#x3c; end) {
+
+    // Try all possible rules.
+    // On success, the rule should:
+    //
+    // - update `state.pos`
+    // - update `state.tokens`
+    // - return true
+    for (i = 0; i &#x3c; len; i++) {
+      ok = rules[i](state, false);
+
+      if (ok) {
+        break;
+      }
+    }
+
+    if (ok) {
+      if (state.pos &#x3e;= end) { break; }
+      continue;
+    }
+
+    state.pending += state.src[state.pos++];
+  }
+
+  if (state.pending) {
+    state.pushPending();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      result = &#x27;    &#x27;.slice((offset - lineStart - lastTabPos) % 4);
+      lastTabPos = offset - lineStart + 1;
+      return result;
+    });
+  }
+
+  state = new StateBlock(str, this, options, env, outTokens);
+  this.<span class="apidocCodeKeywordSpan">tokenize</span>(state, state.line, state.lineMax);
+};
+
+/**
+ * Expose `ParserBlock`
+ */
+
+module.exports = ParserBlock;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.renderer" id="apidoc.module.remarkable.renderer">module remarkable.renderer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.renderer.renderer" id="apidoc.element.remarkable.renderer.renderer">
+        function <span class="apidocSignatureSpan">remarkable.</span>renderer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Renderer() {
+  this.rules = utils.assign({}, rules);
+
+  // exported helper, for custom rules only
+  this.getBreak = rules.getBreak;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.renderer.prototype" id="apidoc.module.remarkable.renderer.prototype">module remarkable.renderer.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.renderer.prototype.render" id="apidoc.element.remarkable.renderer.prototype.render">
+        function <span class="apidocSignatureSpan">remarkable.renderer.prototype.</span>render
+        <span class="apidocSignatureSpan">(tokens, options, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function (tokens, options, env) {
+  var _rules = this.rules;
+  var len = tokens.length, i = -1;
+  var result = &#x27;&#x27;;
+
+  while (++i &#x3c; len) {
+    if (tokens[i].type === &#x27;inline&#x27;) {
+      result += this.renderInline(tokens[i].children, options, env);
+    } else {
+      result += _rules[tokens[i].type](tokens, i, options, env, this);
+    }
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## Usage
+
+```js
+var Remarkable = require(&#x27;remarkable&#x27;);
+var md = new Remarkable();
+
+console.log(md.<span class="apidocCodeKeywordSpan">render</span>(&#x27;# Remarkable rulezz!&#x27;));
+// =&#x3e; &#x3c;h1&#x3e;Remarkable rulezz!&#x3c;/h1&#x3e;
+```
+
+If installed globally with `npm`:
+
+```sh
+cat myfile.md | remarkable
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.renderer.prototype.renderInline" id="apidoc.element.remarkable.renderer.prototype.renderInline">
+        function <span class="apidocSignatureSpan">remarkable.renderer.prototype.</span>renderInline
+        <span class="apidocSignatureSpan">(tokens, options, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">renderInline = function (tokens, options, env) {
+  var _rules = this.rules;
+  var len = tokens.length, i = 0;
+  var result = &#x27;&#x27;;
+
+  while (len--) {
+    result += _rules[tokens[i].type](tokens, i++, options, env, this);
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Renderer.prototype.render = function (tokens, options, env) {
+  var _rules = this.rules;
+  var len = tokens.length, i = -1;
+  var result = &#x27;&#x27;;
+
+  while (++i &#x3c; len) {
+    if (tokens[i].type === &#x27;inline&#x27;) {
+      result += this.<span class="apidocCodeKeywordSpan">renderInline</span>(tokens[i].children, options, env);
+    } else {
+      result += _rules[tokens[i].type](tokens, i, options, env, this);
+    }
+  }
+  return result;
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.ruler" id="apidoc.module.remarkable.ruler">module remarkable.ruler</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler.ruler" id="apidoc.element.remarkable.ruler.ruler">
+        function <span class="apidocSignatureSpan">remarkable.</span>ruler
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Ruler() {
+  // List of added rules. Each element is:
+  //
+  // { name: XXX,
+  //   enabled: Boolean,
+  //   fn: Function(),
+  //   alt: [ name2, name3 ] }
+  //
+  this.__rules__ = [];
+
+  // Cached rule chains.
+  //
+  // First level - chain name, &#x27;&#x27; for default.
+  // Second level - digital anchor for fast filtering by charcodes.
+  //
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.ruler.prototype" id="apidoc.module.remarkable.ruler.prototype">module remarkable.ruler.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler.prototype.__compile__" id="apidoc.element.remarkable.ruler.prototype.__compile__">
+        function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>__compile__
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__compile__ = function () {
+  var self = this;
+  var chains = [ &#x27;&#x27; ];
+
+  // collect unique names
+  self.__rules__.forEach(function (rule) {
+    if (!rule.enabled) {
+      return;
+    }
+
+    rule.alt.forEach(function (altName) {
+      if (chains.indexOf(altName) &#x3c; 0) {
+        chains.push(altName);
+      }
+    });
+  });
+
+  self.__cache__ = {};
+
+  chains.forEach(function (chain) {
+    self.__cache__[chain] = [];
+    self.__rules__.forEach(function (rule) {
+      if (!rule.enabled) {
+        return;
+      }
+
+      if (chain &#x26;&#x26; rule.alt.indexOf(chain) &#x3c; 0) {
+        return;
+      }
+      self.__cache__[chain].push(rule.fn);
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @param  {String} `chainName`
+* @return {Object}
+* @api private
+*/
+
+Ruler.prototype.getRules = function (chainName) {
+ if (this.__cache__ === null) {
+   this.<span class="apidocCodeKeywordSpan">__compile__</span>();
+ }
+ return this.__cache__[chainName] || [];
+};
+
+/**
+* Expose `Ruler`
+*/
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler.prototype.__find__" id="apidoc.element.remarkable.ruler.prototype.__find__">
+        function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>__find__
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__find__ = function (name) {
+  var len = this.__rules__.length;
+  var i = -1;
+
+  while (len--) {
+    if (this.__rules__[++i].name === name) {
+      return i;
+    }
+  }
+  return -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @param  {String} `name` Rule name
+ * @param  {Function `fn`
+ * @param  {Object} `options`
+ * @api private
+ */
+
+Ruler.prototype.at = function (name, fn, options) {
+var idx = this.<span class="apidocCodeKeywordSpan">__find__</span>(name);
+var opt = options || {};
+
+if (idx === -1) {
+  throw new Error(&#x27;Parser rule not found: &#x27; + name);
+}
+
+this.__rules__[idx].fn = fn;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler.prototype.after" id="apidoc.element.remarkable.ruler.prototype.after">
+        function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>after
+        <span class="apidocSignatureSpan">(afterName, ruleName, fn, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">after = function (afterName, ruleName, fn, options) {
+  var idx = this.__find__(afterName);
+  var opt = options || {};
+
+  if (idx === -1) {
+    throw new Error(&#x27;Parser rule not found: &#x27; + afterName);
+  }
+
+  this.__rules__.splice(idx + 1, 0, {
+    name: ruleName,
+    enabled: true,
+    fn: fn,
+    alt: opt.alt || []
+  });
+
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler.prototype.at" id="apidoc.element.remarkable.ruler.prototype.at">
+        function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>at
+        <span class="apidocSignatureSpan">(name, fn, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">at = function (name, fn, options) {
+  var idx = this.__find__(name);
+  var opt = options || {};
+
+  if (idx === -1) {
+    throw new Error(&#x27;Parser rule not found: &#x27; + name);
+  }
+
+  this.__rules__[idx].fn = fn;
+  this.__rules__[idx].alt = opt.alt || [];
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler.prototype.before" id="apidoc.element.remarkable.ruler.prototype.before">
+        function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>before
+        <span class="apidocSignatureSpan">(beforeName, ruleName, fn, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">before = function (beforeName, ruleName, fn, options) {
+  var idx = this.__find__(beforeName);
+  var opt = options || {};
+
+  if (idx === -1) {
+    throw new Error(&#x27;Parser rule not found: &#x27; + beforeName);
+  }
+
+  this.__rules__.splice(idx, 0, {
+    name: ruleName,
+    enabled: true,
+    fn: fn,
+    alt: opt.alt || []
+  });
+
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler.prototype.disable" id="apidoc.element.remarkable.ruler.prototype.disable">
+        function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>disable
+        <span class="apidocSignatureSpan">(list)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disable = function (list) {
+  list = !Array.isArray(list)
+    ? [ list ]
+    : list;
+
+  // Search by name and disable
+  list.forEach(function (name) {
+    var idx = this.__find__(name);
+    if (idx &#x3c; 0) {
+      throw new Error(&#x27;Rules manager: invalid rule name &#x27; + name);
+    }
+    this.__rules__[idx].enabled = false;
+  }, this);
+
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+### Manage rules
+
+```js
+var md = new Remarkable();
+md.inline.ruler.enable([ &#x27;ins&#x27;, &#x27;mark&#x27; ]);
+md.block.ruler.<span class="apidocCodeKeywordSpan">disable</span>([ &#x27;table&#x27;, &#x27;footnote&#x27; ]);
+
+// Enable everything
+md = new Remarkable(&#x27;full&#x27;, {
+  html: true,
+  linkify: true,
+  typographer: true,
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler.prototype.enable" id="apidoc.element.remarkable.ruler.prototype.enable">
+        function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>enable
+        <span class="apidocSignatureSpan">(list, strict)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">enable = function (list, strict) {
+  list = !Array.isArray(list)
+    ? [ list ]
+    : list;
+
+  // In strict mode disable all existing rules first
+  if (strict) {
+    this.__rules__.forEach(function (rule) {
+      rule.enabled = false;
+    });
+  }
+
+  // Search by name and enable
+  list.forEach(function (name) {
+    var idx = this.__find__(name);
+    if (idx &#x3c; 0) {
+      throw new Error(&#x27;Rules manager: invalid rule name &#x27; + name);
+    }
+    this.__rules__[idx].enabled = true;
+  }, this);
+
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+**HEADS UP!**: Experimental extensions can be changed later for something like [Critic Markup](http://criticmarkup.com/), but you
+ will still be able to use old-style rules via external plugins if you prefer.
+
+
+### Manage rules
+
+```js
+var md = new Remarkable();
+md.inline.ruler.<span class="apidocCodeKeywordSpan">enable</span>([ &#x27;ins&#x27;, &#x27;mark&#x27; ]);
+md.block.ruler.disable([ &#x27;table&#x27;, &#x27;footnote&#x27; ]);
+
+// Enable everything
+md = new Remarkable(&#x27;full&#x27;, {
+html: true,
+linkify: true,
+typographer: true,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler.prototype.getRules" id="apidoc.element.remarkable.ruler.prototype.getRules">
+        function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>getRules
+        <span class="apidocSignatureSpan">(chainName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getRules = function (chainName) {
+  if (this.__cache__ === null) {
+    this.__compile__();
+  }
+  return this.__cache__[chainName] || [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @param  {Object} `state` Has properties like `src`, `parser`, `options` etc
+ * @param  {Number} `startLine`
+ * @param  {Number} `endLine`
+ * @api private
+ */
+
+ParserBlock.prototype.tokenize = function (state, startLine, endLine) {
+var rules = this.ruler.<span class="apidocCodeKeywordSpan">getRules</span>(&#x27;&#x27;);
+var len = rules.length;
+var line = startLine;
+var hasEmptyLines = false;
+var ok, i;
+
+while (line &#x3c; endLine) {
+  state.line = line = state.skipEmptyLines(line);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.ruler.prototype.push" id="apidoc.element.remarkable.ruler.prototype.push">
+        function <span class="apidocSignatureSpan">remarkable.ruler.prototype.</span>push
+        <span class="apidocSignatureSpan">(ruleName, fn, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">push = function (ruleName, fn, options) {
+  var opt = options || {};
+
+  this.__rules__.push({
+    name: ruleName,
+    enabled: true,
+    fn: fn,
+    alt: opt.alt || []
+  });
+
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*
+* @api private
+*/
+
+function ParserBlock() {
+ this.ruler = new Ruler();
+ for (var i = 0; i &#x3c; _rules.length; i++) {
+   this.ruler.<span class="apidocCodeKeywordSpan">push</span>(_rules[i][0], _rules[i][1], {
+     alt: (_rules[i][2] || []).slice()
+   });
+ }
+}
+
+/**
+* Generate tokens for the given input range.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.rules" id="apidoc.module.remarkable.rules">module remarkable.rules</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.abbr_close" id="apidoc.element.remarkable.rules.abbr_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>abbr_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">abbr_close = function () {
+  return &#x27;&#x3c;/abbr&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.abbr_open" id="apidoc.element.remarkable.rules.abbr_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>abbr_open
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">abbr_open = function (tokens, idx) {
+  return &#x27;&#x3c;abbr title=&#x22;&#x27; + escapeHtml(replaceEntities(tokens[idx].title)) + &#x27;&#x22;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.blockquote_close" id="apidoc.element.remarkable.rules.blockquote_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>blockquote_close
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">blockquote_close = function (tokens, idx) {
+  return &#x27;&#x3c;/blockquote&#x3e;&#x27; + getBreak(tokens, idx);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.blockquote_open" id="apidoc.element.remarkable.rules.blockquote_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>blockquote_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">blockquote_open = function () {
+  return &#x27;&#x3c;blockquote&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.bullet_list_close" id="apidoc.element.remarkable.rules.bullet_list_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>bullet_list_close
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bullet_list_close = function (tokens, idx) {
+  return &#x27;&#x3c;/ul&#x3e;&#x27; + getBreak(tokens, idx);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.bullet_list_open" id="apidoc.element.remarkable.rules.bullet_list_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>bullet_list_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bullet_list_open = function () {
+  return &#x27;&#x3c;ul&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.code" id="apidoc.element.remarkable.rules.code">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>code
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">code = function (tokens, idx) {
+  if (tokens[idx].block) {
+    return &#x27;&#x3c;pre&#x3e;&#x3c;code&#x3e;&#x27; + escapeHtml(tokens[idx].content) + &#x27;&#x3c;/code&#x3e;&#x3c;/pre&#x3e;&#x27; + getBreak(tokens, idx);
+  }
+  return &#x27;&#x3c;code&#x3e;&#x27; + escapeHtml(tokens[idx].content) + &#x27;&#x3c;/code&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.dd_close" id="apidoc.element.remarkable.rules.dd_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>dd_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dd_close = function () {
+  return &#x27;&#x3c;/dd&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.dd_open" id="apidoc.element.remarkable.rules.dd_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>dd_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dd_open = function () {
+  return &#x27;&#x3c;dd&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.del_close" id="apidoc.element.remarkable.rules.del_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>del_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">del_close = function () {
+  return &#x27;&#x3c;/del&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.del_open" id="apidoc.element.remarkable.rules.del_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>del_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">del_open = function () {
+  return &#x27;&#x3c;del&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.dl_close" id="apidoc.element.remarkable.rules.dl_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>dl_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dl_close = function () {
+  return &#x27;&#x3c;/dl&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.dl_open" id="apidoc.element.remarkable.rules.dl_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>dl_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dl_open = function () {
+  return &#x27;&#x3c;dl&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.dt_close" id="apidoc.element.remarkable.rules.dt_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>dt_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dt_close = function () {
+  return &#x27;&#x3c;/dt&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.dt_open" id="apidoc.element.remarkable.rules.dt_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>dt_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">dt_open = function () {
+  return &#x27;&#x3c;dt&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.em_close" id="apidoc.element.remarkable.rules.em_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>em_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">em_close = function () {
+  return &#x27;&#x3c;/em&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.em_open" id="apidoc.element.remarkable.rules.em_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>em_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">em_open = function () {
+  return &#x27;&#x3c;em&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.fence" id="apidoc.element.remarkable.rules.fence">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>fence
+        <span class="apidocSignatureSpan">(tokens, idx, options, env, instance)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fence = function (tokens, idx, options, env, instance) {
+  var token = tokens[idx];
+  var langClass = &#x27;&#x27;;
+  var langPrefix = options.langPrefix;
+  var langName = &#x27;&#x27;, fences, fenceName;
+  var highlighted;
+
+  if (token.params) {
+
+    //
+    // ```foo bar
+    //
+    // Try custom renderer &#x22;foo&#x22; first. That will simplify overwrite
+    // for diagrams, latex, and any other fenced block with custom look
+    //
+
+    fences = token.params.split(/\s+/g);
+    fenceName = fences.join(&#x27; &#x27;);
+
+    if (has(instance.rules.fence_custom, fences[0])) {
+      return instance.rules.fence_custom[fences[0]](tokens, idx, options, env, instance);
+    }
+
+    langName = escapeHtml(replaceEntities(unescapeMd(fenceName)));
+    langClass = &#x27; class=&#x22;&#x27; + langPrefix + langName + &#x27;&#x22;&#x27;;
+  }
+
+  if (options.highlight) {
+    highlighted = options.highlight.apply(options.highlight, [ token.content ].concat(fences))
+      || escapeHtml(token.content);
+  } else {
+    highlighted = escapeHtml(token.content);
+  }
+
+  return &#x27;&#x3c;pre&#x3e;&#x3c;code&#x27; + langClass + &#x27;&#x3e;&#x27;
+        + highlighted
+        + &#x27;&#x3c;/code&#x3e;&#x3c;/pre&#x3e;&#x27;
+        + getBreak(tokens, idx);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.footnote_anchor" id="apidoc.element.remarkable.rules.footnote_anchor">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_anchor
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">footnote_anchor = function (tokens, idx) {
+  var n = Number(tokens[idx].id + 1).toString();
+  var id = &#x27;fnref&#x27; + n;
+  if (tokens[idx].subId &#x3e; 0) {
+    id += &#x27;:&#x27; + tokens[idx].subId;
+  }
+  return &#x27; &#x3c;a href=&#x22;#&#x27; + id + &#x27;&#x22; class=&#x22;footnote-backref&#x22;&#x3e;↩&#x3c;/a&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.footnote_block_close" id="apidoc.element.remarkable.rules.footnote_block_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_block_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">footnote_block_close = function () {
+  return &#x27;&#x3c;/ol&#x3e;\n&#x3c;/section&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.footnote_block_open" id="apidoc.element.remarkable.rules.footnote_block_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_block_open
+        <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">footnote_block_open = function (tokens, idx, options) {
+  var hr = options.xhtmlOut
+    ? &#x27;&#x3c;hr class=&#x22;footnotes-sep&#x22; /&#x3e;\n&#x27;
+    : &#x27;&#x3c;hr class=&#x22;footnotes-sep&#x22;&#x3e;\n&#x27;;
+  return hr + &#x27;&#x3c;section class=&#x22;footnotes&#x22;&#x3e;\n&#x3c;ol class=&#x22;footnotes-list&#x22;&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.footnote_close" id="apidoc.element.remarkable.rules.footnote_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">footnote_close = function () {
+  return &#x27;&#x3c;/li&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.footnote_open" id="apidoc.element.remarkable.rules.footnote_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_open
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">footnote_open = function (tokens, idx) {
+  var id = Number(tokens[idx].id + 1).toString();
+  return &#x27;&#x3c;li id=&#x22;fn&#x27; + id + &#x27;&#x22;  class=&#x22;footnote-item&#x22;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.footnote_ref" id="apidoc.element.remarkable.rules.footnote_ref">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>footnote_ref
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">footnote_ref = function (tokens, idx) {
+  var n = Number(tokens[idx].id + 1).toString();
+  var id = &#x27;fnref&#x27; + n;
+  if (tokens[idx].subId &#x3e; 0) {
+    id += &#x27;:&#x27; + tokens[idx].subId;
+  }
+  return &#x27;&#x3c;sup class=&#x22;footnote-ref&#x22;&#x3e;&#x3c;a href=&#x22;#fn&#x27; + n + &#x27;&#x22; id=&#x22;&#x27; + id + &#x27;&#x22;&#x3e;[&#x27; + n + &#x27;]&#x3c;/a&#x3e;&#x3c;/sup&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.getBreak" id="apidoc.element.remarkable.rules.getBreak">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>getBreak
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getBreak(tokens, idx) {
+  idx = nextToken(tokens, idx);
+  if (idx &#x3c; tokens.length &#x26;&#x26; tokens[idx].type === &#x27;list_item_close&#x27;) {
+    return &#x27;&#x27;;
+  }
+  return &#x27;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.hardbreak" id="apidoc.element.remarkable.rules.hardbreak">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>hardbreak
+        <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hardbreak = function (tokens, idx, options) {
+  return options.xhtmlOut ? &#x27;&#x3c;br /&#x3e;\n&#x27; : &#x27;&#x3c;br&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.heading_close" id="apidoc.element.remarkable.rules.heading_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>heading_close
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">heading_close = function (tokens, idx) {
+  return &#x27;&#x3c;/h&#x27; + tokens[idx].hLevel + &#x27;&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.heading_open" id="apidoc.element.remarkable.rules.heading_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>heading_open
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">heading_open = function (tokens, idx) {
+  return &#x27;&#x3c;h&#x27; + tokens[idx].hLevel + &#x27;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.hr" id="apidoc.element.remarkable.rules.hr">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>hr
+        <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hr = function (tokens, idx, options) {
+  return (options.xhtmlOut ? &#x27;&#x3c;hr /&#x3e;&#x27; : &#x27;&#x3c;hr&#x3e;&#x27;) + getBreak(tokens, idx);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.htmlblock" id="apidoc.element.remarkable.rules.htmlblock">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>htmlblock
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">htmlblock = function (tokens, idx) {
+  return tokens[idx].content;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.htmltag" id="apidoc.element.remarkable.rules.htmltag">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>htmltag
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">htmltag = function (tokens, idx) {
+  return tokens[idx].content;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.image" id="apidoc.element.remarkable.rules.image">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>image
+        <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">image = function (tokens, idx, options) {
+  var src = &#x27; src=&#x22;&#x27; + escapeHtml(tokens[idx].src) + &#x27;&#x22;&#x27;;
+  var title = tokens[idx].title ? (&#x27; title=&#x22;&#x27; + escapeHtml(replaceEntities(tokens[idx].title)) + &#x27;&#x22;&#x27;) : &#x27;&#x27;;
+  var alt = &#x27; alt=&#x22;&#x27; + (tokens[idx].alt ? escapeHtml(replaceEntities(unescapeMd(tokens[idx].alt))) : &#x27;&#x27;) + &#x27;&#x22;&#x27;;
+  var suffix = options.xhtmlOut ? &#x27; /&#x27; : &#x27;&#x27;;
+  return &#x27;&#x3c;img&#x27; + src + alt + title + suffix + &#x27;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.ins_close" id="apidoc.element.remarkable.rules.ins_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>ins_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ins_close = function () {
+  return &#x27;&#x3c;/ins&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.ins_open" id="apidoc.element.remarkable.rules.ins_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>ins_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ins_open = function () {
+  return &#x27;&#x3c;ins&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.link_close" id="apidoc.element.remarkable.rules.link_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>link_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">link_close = function () {
+  return &#x27;&#x3c;/a&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.link_open" id="apidoc.element.remarkable.rules.link_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>link_open
+        <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">link_open = function (tokens, idx, options) {
+  var title = tokens[idx].title ? (&#x27; title=&#x22;&#x27; + escapeHtml(replaceEntities(tokens[idx].title)) + &#x27;&#x22;&#x27;) : &#x27;&#x27;;
+  var target = options.linkTarget ? (&#x27; target=&#x22;&#x27; + options.linkTarget + &#x27;&#x22;&#x27;) : &#x27;&#x27;;
+  return &#x27;&#x3c;a href=&#x22;&#x27; + escapeHtml(tokens[idx].href) + &#x27;&#x22;&#x27; + title + target + &#x27;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.list_item_close" id="apidoc.element.remarkable.rules.list_item_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>list_item_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list_item_close = function () {
+  return &#x27;&#x3c;/li&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.list_item_open" id="apidoc.element.remarkable.rules.list_item_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>list_item_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list_item_open = function () {
+  return &#x27;&#x3c;li&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.mark_close" id="apidoc.element.remarkable.rules.mark_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>mark_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mark_close = function () {
+  return &#x27;&#x3c;/mark&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.mark_open" id="apidoc.element.remarkable.rules.mark_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>mark_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mark_open = function () {
+  return &#x27;&#x3c;mark&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.ordered_list_close" id="apidoc.element.remarkable.rules.ordered_list_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>ordered_list_close
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ordered_list_close = function (tokens, idx) {
+  return &#x27;&#x3c;/ol&#x3e;&#x27; + getBreak(tokens, idx);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.ordered_list_open" id="apidoc.element.remarkable.rules.ordered_list_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>ordered_list_open
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ordered_list_open = function (tokens, idx) {
+  var token = tokens[idx];
+  var order = token.order &#x3e; 1 ? &#x27; start=&#x22;&#x27; + token.order + &#x27;&#x22;&#x27; : &#x27;&#x27;;
+  return &#x27;&#x3c;ol&#x27; + order + &#x27;&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.paragraph_close" id="apidoc.element.remarkable.rules.paragraph_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>paragraph_close
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">paragraph_close = function (tokens, idx) {
+  var addBreak = !(tokens[idx].tight &#x26;&#x26; idx &#x26;&#x26; tokens[idx - 1].type === &#x27;inline&#x27; &#x26;&#x26; !tokens[idx - 1].content);
+  return (tokens[idx].tight ? &#x27;&#x27; : &#x27;&#x3c;/p&#x3e;&#x27;) + (addBreak ? getBreak(tokens, idx) : &#x27;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.paragraph_open" id="apidoc.element.remarkable.rules.paragraph_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>paragraph_open
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">paragraph_open = function (tokens, idx) {
+  return tokens[idx].tight ? &#x27;&#x27; : &#x27;&#x3c;p&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.softbreak" id="apidoc.element.remarkable.rules.softbreak">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>softbreak
+        <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">softbreak = function (tokens, idx, options) {
+  return options.breaks ? (options.xhtmlOut ? &#x27;&#x3c;br /&#x3e;\n&#x27; : &#x27;&#x3c;br&#x3e;\n&#x27;) : &#x27;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.strong_close" id="apidoc.element.remarkable.rules.strong_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>strong_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">strong_close = function () {
+  return &#x27;&#x3c;/strong&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.strong_open" id="apidoc.element.remarkable.rules.strong_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>strong_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">strong_open = function () {
+  return &#x27;&#x3c;strong&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.sub" id="apidoc.element.remarkable.rules.sub">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>sub
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sub = function (tokens, idx) {
+  return &#x27;&#x3c;sub&#x3e;&#x27; + escapeHtml(tokens[idx].content) + &#x27;&#x3c;/sub&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.sup" id="apidoc.element.remarkable.rules.sup">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>sup
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sup = function (tokens, idx) {
+  return &#x27;&#x3c;sup&#x3e;&#x27; + escapeHtml(tokens[idx].content) + &#x27;&#x3c;/sup&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.table_close" id="apidoc.element.remarkable.rules.table_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>table_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">table_close = function () {
+  return &#x27;&#x3c;/table&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.table_open" id="apidoc.element.remarkable.rules.table_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>table_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">table_open = function () {
+  return &#x27;&#x3c;table&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.tbody_close" id="apidoc.element.remarkable.rules.tbody_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>tbody_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tbody_close = function () {
+  return &#x27;&#x3c;/tbody&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.tbody_open" id="apidoc.element.remarkable.rules.tbody_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>tbody_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tbody_open = function () {
+  return &#x27;&#x3c;tbody&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.td_close" id="apidoc.element.remarkable.rules.td_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>td_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">td_close = function () {
+  return &#x27;&#x3c;/td&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.td_open" id="apidoc.element.remarkable.rules.td_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>td_open
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">td_open = function (tokens, idx) {
+  var token = tokens[idx];
+  return &#x27;&#x3c;td&#x27;
+    + (token.align ? &#x27; style=&#x22;text-align:&#x27; + token.align + &#x27;&#x22;&#x27; : &#x27;&#x27;)
+    + &#x27;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.text" id="apidoc.element.remarkable.rules.text">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>text
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">text = function (tokens, idx) {
+  return escapeHtml(tokens[idx].content);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.th_close" id="apidoc.element.remarkable.rules.th_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>th_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">th_close = function () {
+  return &#x27;&#x3c;/th&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.th_open" id="apidoc.element.remarkable.rules.th_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>th_open
+        <span class="apidocSignatureSpan">(tokens, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">th_open = function (tokens, idx) {
+  var token = tokens[idx];
+  return &#x27;&#x3c;th&#x27;
+    + (token.align ? &#x27; style=&#x22;text-align:&#x27; + token.align + &#x27;&#x22;&#x27; : &#x27;&#x27;)
+    + &#x27;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.thead_close" id="apidoc.element.remarkable.rules.thead_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>thead_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">thead_close = function () {
+  return &#x27;&#x3c;/thead&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.thead_open" id="apidoc.element.remarkable.rules.thead_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>thead_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">thead_open = function () {
+  return &#x27;&#x3c;thead&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.tr_close" id="apidoc.element.remarkable.rules.tr_close">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>tr_close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tr_close = function () {
+  return &#x27;&#x3c;/tr&#x3e;\n&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.rules.tr_open" id="apidoc.element.remarkable.rules.tr_open">
+        function <span class="apidocSignatureSpan">remarkable.rules.</span>tr_open
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tr_open = function () {
+  return &#x27;&#x3c;tr&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.utils" id="apidoc.module.remarkable.utils">module remarkable.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.utils.assign" id="apidoc.element.remarkable.utils.assign">
+        function <span class="apidocSignatureSpan">remarkable.utils.</span>assign
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function assign(obj) {
+  var sources = [].slice.call(arguments, 1);
+
+  sources.forEach(function (source) {
+    if (!source) { return; }
+
+    if (typeof source !== &#x27;object&#x27;) {
+      throw new TypeError(source + &#x27;must be object&#x27;);
+    }
+
+    Object.keys(source).forEach(function (key) {
+      obj[key] = source[key];
+    });
+  });
+
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/**
+* Renderer class. Renders HTML and exposes `rules` to allow
+* local modifications.
+*/
+
+function Renderer() {
+ this.rules = utils.<span class="apidocCodeKeywordSpan">assign</span>({}, rules);
+
+ // exported helper, for custom rules only
+ this.getBreak = rules.getBreak;
+}
+
+/**
+* Render a string of inline HTML with the given `tokens` and
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.utils.escapeHtml" id="apidoc.element.remarkable.utils.escapeHtml">
+        function <span class="apidocSignatureSpan">remarkable.utils.</span>escapeHtml
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function escapeHtml(str) {
+  if (HTML_ESCAPE_TEST_RE.test(str)) {
+    return str.replace(HTML_ESCAPE_REPLACE_RE, replaceUnsafeChar);
+  }
+  return str;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.utils.fromCodePoint" id="apidoc.element.remarkable.utils.fromCodePoint">
+        function <span class="apidocSignatureSpan">remarkable.utils.</span>fromCodePoint
+        <span class="apidocSignatureSpan">(c)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromCodePoint(c) {
+<span class="apidocCodeCommentSpan">  /*eslint no-bitwise:0*/
+</span>  if (c &#x3e; 0xffff) {
+    c -= 0x10000;
+    var surrogate1 = 0xd800 + (c &#x3e;&#x3e; 10),
+        surrogate2 = 0xdc00 + (c &#x26; 0x3ff);
+
+    return String.fromCharCode(surrogate1, surrogate2);
+  }
+  return String.fromCharCode(c);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.utils.has" id="apidoc.element.remarkable.utils.has">
+        function <span class="apidocSignatureSpan">remarkable.utils.</span>has
+        <span class="apidocSignatureSpan">(object, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function has(object, key) {
+  return object
+    ? hasOwn.call(object, key)
+    : false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.utils.isString" id="apidoc.element.remarkable.utils.isString">
+        function <span class="apidocSignatureSpan">remarkable.utils.</span>isString
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isString(obj) {
+  return typeOf(obj) === &#x27;[object String]&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.utils.isValidEntityCode" id="apidoc.element.remarkable.utils.isValidEntityCode">
+        function <span class="apidocSignatureSpan">remarkable.utils.</span>isValidEntityCode
+        <span class="apidocSignatureSpan">(c)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isValidEntityCode(c) {
+<span class="apidocCodeCommentSpan">  /*eslint no-bitwise:0*/
+</span>  // broken sequence
+  if (c &#x3e;= 0xD800 &#x26;&#x26; c &#x3c;= 0xDFFF) { return false; }
+  // never used
+  if (c &#x3e;= 0xFDD0 &#x26;&#x26; c &#x3c;= 0xFDEF) { return false; }
+  if ((c &#x26; 0xFFFF) === 0xFFFF || (c &#x26; 0xFFFF) === 0xFFFE) { return false; }
+  // control codes
+  if (c &#x3e;= 0x00 &#x26;&#x26; c &#x3c;= 0x08) { return false; }
+  if (c === 0x0B) { return false; }
+  if (c &#x3e;= 0x0E &#x26;&#x26; c &#x3c;= 0x1F) { return false; }
+  if (c &#x3e;= 0x7F &#x26;&#x26; c &#x3c;= 0x9F) { return false; }
+  // out of range
+  if (c &#x3e; 0x10FFFF) { return false; }
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.utils.replaceEntities" id="apidoc.element.remarkable.utils.replaceEntities">
+        function <span class="apidocSignatureSpan">remarkable.utils.</span>replaceEntities
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function replaceEntities(str) {
+  if (str.indexOf(&#x27;&#x26;&#x27;) &#x3c; 0) { return str; }
+
+  return str.replace(NAMED_ENTITY_RE, replaceEntityPattern);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @return {Boolean}
+ */
+
+function validateLink(url) {
+  var BAD_PROTOCOLS = [ &#x27;vbscript&#x27;, &#x27;javascript&#x27;, &#x27;file&#x27;, &#x27;data&#x27; ];
+  var str = url.trim().toLowerCase();
+  // Care about digital entities &#x22;javascript&#x26;#x3A;alert(1)&#x22;
+  str = utils.<span class="apidocCodeKeywordSpan">replaceEntities</span>(str);
+  if (str.indexOf(&#x27;:&#x27;) !== -1 &#x26;&#x26; BAD_PROTOCOLS.indexOf(str.split(&#x27;:&#x27;)[0]) !== -1) {
+    return false;
+  }
+  return true;
+}
+
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.utils.unescapeMd" id="apidoc.element.remarkable.utils.unescapeMd">
+        function <span class="apidocSignatureSpan">remarkable.utils.</span>unescapeMd
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function unescapeMd(str) {
+  if (str.indexOf(&#x27;\\&#x27;) &#x3c; 0) { return str; }
+  return str.replace(UNESCAPE_MD_RE, &#x27;$1&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
