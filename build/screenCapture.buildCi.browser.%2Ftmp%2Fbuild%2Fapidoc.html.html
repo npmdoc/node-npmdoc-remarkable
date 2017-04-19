@@ -56,6 +56,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.remarkable">
+            function <span class="apidocSignatureSpan"></span>remarkable
+            <span class="apidocSignatureSpan">(preset, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.remarkable.parser_block">
             function <span class="apidocSignatureSpan">remarkable.</span>parser_block
             <span class="apidocSignatureSpan">()</span>
@@ -101,6 +110,24 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_block">
+            function <span class="apidocSignatureSpan">remarkable.</span>state_block
+            <span class="apidocSignatureSpan">(src, parser, options, env, tokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_inline">
+            function <span class="apidocSignatureSpan">remarkable.</span>state_inline
+            <span class="apidocSignatureSpan">(src, parserInline, options, env, outTokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>parser_block.prototype</span>
 
         </li>
@@ -132,6 +159,18 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>rules</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>state_block.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">remarkable.</span>state_inline.prototype</span>
 
         </li>
 
@@ -949,6 +988,130 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.state_block">module remarkable.state_block</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_block.state_block">
+            function <span class="apidocSignatureSpan">remarkable.</span>state_block
+            <span class="apidocSignatureSpan">(src, parser, options, env, tokens)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.state_block.prototype">module remarkable.state_block.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_block.prototype.getLines">
+            function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>getLines
+            <span class="apidocSignatureSpan">(begin, end, indent, keepLastLF)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_block.prototype.isEmpty">
+            function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>isEmpty
+            <span class="apidocSignatureSpan">(line)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_block.prototype.skipChars">
+            function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>skipChars
+            <span class="apidocSignatureSpan">(pos, code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_block.prototype.skipCharsBack">
+            function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>skipCharsBack
+            <span class="apidocSignatureSpan">(pos, code, min)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_block.prototype.skipEmptyLines">
+            function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>skipEmptyLines
+            <span class="apidocSignatureSpan">(from)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_block.prototype.skipSpaces">
+            function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>skipSpaces
+            <span class="apidocSignatureSpan">(pos)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.state_inline">module remarkable.state_inline</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_inline.state_inline">
+            function <span class="apidocSignatureSpan">remarkable.</span>state_inline
+            <span class="apidocSignatureSpan">(src, parserInline, options, env, outTokens)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.state_inline.prototype">module remarkable.state_inline.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_inline.prototype.cacheGet">
+            function <span class="apidocSignatureSpan">remarkable.state_inline.prototype.</span>cacheGet
+            <span class="apidocSignatureSpan">(key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_inline.prototype.cacheSet">
+            function <span class="apidocSignatureSpan">remarkable.state_inline.prototype.</span>cacheSet
+            <span class="apidocSignatureSpan">(key, val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_inline.prototype.push">
+            function <span class="apidocSignatureSpan">remarkable.state_inline.prototype.</span>push
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.remarkable.state_inline.prototype.pushPending">
+            function <span class="apidocSignatureSpan">remarkable.state_inline.prototype.</span>pushPending
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.remarkable.utils">module remarkable.utils</a><ol>
 
         <li>
@@ -1029,6 +1192,34 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.remarkable" id="apidoc.module.remarkable">module remarkable</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.remarkable" id="apidoc.element.remarkable.remarkable">
+        function <span class="apidocSignatureSpan"></span>remarkable
+        <span class="apidocSignatureSpan">(preset, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Remarkable(preset, options) {
+  if (typeof preset !== 'string') {
+    options = preset;
+    preset = 'default';
+  }
+
+  this.inline   = new ParserInline();
+  this.block    = new ParserBlock();
+  this.core     = new ParserCore();
+  this.renderer = new Renderer();
+  this.ruler    = new Ruler();
+
+  this.options  = {};
+  this.configure(config[preset]);
+  this.set(options || {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
@@ -1135,6 +1326,136 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_block" id="apidoc.element.remarkable.state_block">
+        function <span class="apidocSignatureSpan">remarkable.</span>state_block
+        <span class="apidocSignatureSpan">(src, parser, options, env, tokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateBlock(src, parser, options, env, tokens) {
+  var ch, s, start, pos, len, indent, indent_found;
+
+  this.src = src;
+
+  // Shortcuts to simplify nested calls
+  this.parser = parser;
+
+  this.options = options;
+
+  this.env = env;
+
+  //
+  // Internal state vartiables
+  //
+
+  this.tokens = tokens;
+
+  this.bMarks = [];  // line begin offsets for fast jumps
+  this.eMarks = [];  // line end offsets for fast jumps
+  this.tShift = [];  // indent for each line
+
+  // block parser variables
+  this.blkIndent  = 0; // required block content indent
+                       // (for example, if we are in list)
+  this.line       = 0; // line index in src
+  this.lineMax    = 0; // lines count
+  this.tight      = false;  // loose/tight mode for lists
+  this.parentType = 'root'; // if `list`, block parser stops on two newlines
+  this.ddIndent   = -1; // indent of the current dd block (-1 if there isn't any)
+
+  this.level = 0;
+
+  // renderer
+  this.result = '';
+
+  // Create caches
+  // Generate markers.
+  s = this.src;
+  indent = 0;
+  indent_found = false;
+
+  for (start = pos = indent = 0, len = s.length; pos &lt; len; pos++) {
+    ch = s.charCodeAt(pos);
+
+    if (!indent_found) {
+      if (ch === 0x20/* space */) {
+        indent++;
+        continue;
+      } else {
+        indent_found = true;
+      }
+    }
+
+    if (ch === 0x0A || pos === len - 1) {
+      if (ch !== 0x0A) { pos++; }
+      this.bMarks.push(start);
+      this.eMarks.push(pos);
+      this.tShift.push(indent);
+
+      indent_found = false;
+      indent = 0;
+      start = pos + 1;
+    }
+  }
+
+  // Push fake entry to simplify cache bounds checks
+  this.bMarks.push(s.length);
+  this.eMarks.push(s.length);
+  this.tShift.push(0);
+
+  this.lineMax = this.bMarks.length - 1; // don't count last fake line
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_inline" id="apidoc.element.remarkable.state_inline">
+        function <span class="apidocSignatureSpan">remarkable.</span>state_inline
+        <span class="apidocSignatureSpan">(src, parserInline, options, env, outTokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateInline(src, parserInline, options, env, outTokens) {
+  this.src = src;
+  this.env = env;
+  this.options = options;
+  this.parser = parserInline;
+  this.tokens = outTokens;
+  this.pos = 0;
+  this.posMax = this.src.length;
+  this.level = 0;
+  this.pending = '';
+  this.pendingLevel = 0;
+
+  this.cache = [];        // Stores { start: end } pairs. Useful for backtrack
+                          // optimization of pairs parse (emphasis, strikes).
+
+  // Link parser state vars
+
+  this.isInLabel = false; // Set true when seek link label - we should disable
+                          // "paired" rules (emphasis, strikes) to not skip
+                          // tailing `]`
+
+  this.linkLevel = 0;     // Increment for each nesting link. Used to prevent
+                          // nesting in definitions
+
+  this.linkContent = '';  // Temporary storage for link url
+
+  this.labelUnmatchedScopes = 0; // Track unpaired `[` for link labels
+                                 // (backtrack optimization)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
 
 
 
@@ -1459,7 +1780,23 @@ out[entity.slice(1, -1)] = strToUni(entities[entity].characters);
   state.pos++;
   state.cacheSet(pos, state.pos);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    level--;
+    if (level === 0) {
+      found = true;
+      break;
+    }
+  }
+
+  state.parser.<span class="apidocCodeKeywordSpan">skipToken</span>(state);
+}
+
+if (found) {
+  labelEnd = state.pos;
+  state.labelUnmatchedScopes = 0;
+} else {
+  state.labelUnmatchedScopes = level - 1;
+...</pre></li>
     </ul>
 
 
@@ -2005,21 +2342,21 @@ while (line &lt; endLine) {
   this.__cache__ = null;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-*
-* @api private
-*/
 
-function ParserBlock() {
- this.ruler = new Ruler();
- for (var i = 0; i &lt; _rules.length; i++) {
-   this.ruler.<span class="apidocCodeKeywordSpan">push</span>(_rules[i][0], _rules[i][1], {
-     alt: (_rules[i][2] || []).slice()
-   });
- }
-}
+function readFile(filename, encoding, callback) {
+if (options.file === '-') {
+  var chunks = [];
 
-/**
-* Generate tokens for the given input range.
+  // read from stdin
+  process.stdin.on('data', function(chunk) {
+    chunks.<span class="apidocCodeKeywordSpan">push</span>(chunk);
+  });
+
+  process.stdin.on('end', function() {
+    return callback(null, Buffer.concat(chunks).toString(encoding));
+  });
+} else {
+  fs.readFile(filename, encoding, callback);
 ...</pre></li>
     </ul>
 
@@ -3031,6 +3368,522 @@ function ParserBlock() {
     </ul>
 
 
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.state_block" id="apidoc.module.remarkable.state_block">module remarkable.state_block</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_block.state_block" id="apidoc.element.remarkable.state_block.state_block">
+        function <span class="apidocSignatureSpan">remarkable.</span>state_block
+        <span class="apidocSignatureSpan">(src, parser, options, env, tokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateBlock(src, parser, options, env, tokens) {
+  var ch, s, start, pos, len, indent, indent_found;
+
+  this.src = src;
+
+  // Shortcuts to simplify nested calls
+  this.parser = parser;
+
+  this.options = options;
+
+  this.env = env;
+
+  //
+  // Internal state vartiables
+  //
+
+  this.tokens = tokens;
+
+  this.bMarks = [];  // line begin offsets for fast jumps
+  this.eMarks = [];  // line end offsets for fast jumps
+  this.tShift = [];  // indent for each line
+
+  // block parser variables
+  this.blkIndent  = 0; // required block content indent
+                       // (for example, if we are in list)
+  this.line       = 0; // line index in src
+  this.lineMax    = 0; // lines count
+  this.tight      = false;  // loose/tight mode for lists
+  this.parentType = 'root'; // if `list`, block parser stops on two newlines
+  this.ddIndent   = -1; // indent of the current dd block (-1 if there isn't any)
+
+  this.level = 0;
+
+  // renderer
+  this.result = '';
+
+  // Create caches
+  // Generate markers.
+  s = this.src;
+  indent = 0;
+  indent_found = false;
+
+  for (start = pos = indent = 0, len = s.length; pos &lt; len; pos++) {
+    ch = s.charCodeAt(pos);
+
+    if (!indent_found) {
+      if (ch === 0x20/* space */) {
+        indent++;
+        continue;
+      } else {
+        indent_found = true;
+      }
+    }
+
+    if (ch === 0x0A || pos === len - 1) {
+      if (ch !== 0x0A) { pos++; }
+      this.bMarks.push(start);
+      this.eMarks.push(pos);
+      this.tShift.push(indent);
+
+      indent_found = false;
+      indent = 0;
+      start = pos + 1;
+    }
+  }
+
+  // Push fake entry to simplify cache bounds checks
+  this.bMarks.push(s.length);
+  this.eMarks.push(s.length);
+  this.tShift.push(0);
+
+  this.lineMax = this.bMarks.length - 1; // don't count last fake line
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.state_block.prototype" id="apidoc.module.remarkable.state_block.prototype">module remarkable.state_block.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_block.prototype.getLines" id="apidoc.element.remarkable.state_block.prototype.getLines">
+        function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>getLines
+        <span class="apidocSignatureSpan">(begin, end, indent, keepLastLF)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getLines(begin, end, indent, keepLastLF) {
+  var i, first, last, queue, shift,
+      line = begin;
+
+  if (begin &gt;= end) {
+    return '';
+  }
+
+  // Opt: don't use push queue for single line;
+  if (line + 1 === end) {
+    first = this.bMarks[line] + Math.min(this.tShift[line], indent);
+    last = keepLastLF ? this.eMarks[line] + 1 : this.eMarks[line];
+    return this.src.slice(first, last);
+  }
+
+  queue = new Array(end - begin);
+
+  for (i = 0; line &lt; end; line++, i++) {
+    shift = this.tShift[line];
+    if (shift &gt; indent) { shift = indent; }
+    if (shift &lt; 0) { shift = 0; }
+
+    first = this.bMarks[line] + shift;
+
+    if (line + 1 &lt; end || keepLastLF) {
+      // No need for bounds check because we have fake entry on tail.
+      last = this.eMarks[line] + 1;
+    } else {
+      last = this.eMarks[line];
+    }
+
+    queue[i] = this.src.slice(first, last);
+  }
+
+  return queue.join('');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+    break;
+  }
+
+  state.line = nextLine;
+  state.tokens.push({
+    type: 'code',
+    content: state.<span class="apidocCodeKeywordSpan">getLines</span>(startLine, last, 4 + state.blkIndent, true),
+    block: true,
+    lines: [ startLine, state.line ],
+    level: state.level
+  });
+
+  return true;
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_block.prototype.isEmpty" id="apidoc.element.remarkable.state_block.prototype.isEmpty">
+        function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>isEmpty
+        <span class="apidocSignatureSpan">(line)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isEmpty(line) {
+  return this.bMarks[line] + this.tShift[line] &gt;= this.eMarks[line];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+// set state.tight iff we had an empty line before current tag
+// i.e. latest empty line should not count
+state.tight = !hasEmptyLines;
+
+// paragraph might "eat" one newline after it in nested lists
+if (state.<span class="apidocCodeKeywordSpan">isEmpty</span>(state.line - 1)) {
+  hasEmptyLines = true;
+}
+
+line = state.line;
+
+if (line &lt; endLine &amp;&amp; state.isEmpty(line)) {
+  hasEmptyLines = true;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_block.prototype.skipChars" id="apidoc.element.remarkable.state_block.prototype.skipChars">
+        function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>skipChars
+        <span class="apidocSignatureSpan">(pos, code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function skipChars(pos, code) {
+  for (var max = this.src.length; pos &lt; max; pos++) {
+    if (this.src.charCodeAt(pos) !== code) { break; }
+  }
+  return pos;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+if (marker !== 0x7E/* ~ */ &amp;&amp; marker !== 0x60 /* ` */) {
+  return false;
+}
+
+// scan marker length
+mem = pos;
+pos = state.<span class="apidocCodeKeywordSpan">skipChars</span>(pos, marker);
+
+len = pos - mem;
+
+if (len &lt; 3) { return false; }
+
+params = state.src.slice(pos, max).trim();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_block.prototype.skipCharsBack" id="apidoc.element.remarkable.state_block.prototype.skipCharsBack">
+        function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>skipCharsBack
+        <span class="apidocSignatureSpan">(pos, code, min)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function skipCharsBack(pos, code, min) {
+  if (pos &lt;= min) { return pos; }
+
+  while (pos &gt; min) {
+    if (code !== this.src.charCodeAt(--pos)) { return pos + 1; }
+  }
+  return pos;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+if (level &gt; 6 || (pos &lt; max &amp;&amp; ch !== 0x20/* space */)) { return false; }
+
+if (silent) { return true; }
+
+// Let's cut tails like '    ###  ' from the end of string
+
+max = state.<span class="apidocCodeKeywordSpan">skipCharsBack</span>(max, 0x20, pos); // space
+tmp = state.skipCharsBack(max, 0x23, pos); // #
+if (tmp &gt; pos &amp;&amp; state.src.charCodeAt(tmp - 1) === 0x20/* space */) {
+  max = tmp;
+}
+
+state.line = startLine + 1;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_block.prototype.skipEmptyLines" id="apidoc.element.remarkable.state_block.prototype.skipEmptyLines">
+        function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>skipEmptyLines
+        <span class="apidocSignatureSpan">(from)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function skipEmptyLines(from) {
+  for (var max = this.lineMax; from &lt; max; from++) {
+    if (this.bMarks[from] + this.tShift[from] &lt; this.eMarks[from]) {
+      break;
+    }
+  }
+  return from;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var rules = this.ruler.getRules('');
+  var len = rules.length;
+  var line = startLine;
+  var hasEmptyLines = false;
+  var ok, i;
+
+  while (line &lt; endLine) {
+state.line = line = state.<span class="apidocCodeKeywordSpan">skipEmptyLines</span>(line);
+if (line &gt;= endLine) {
+  break;
+}
+
+// Termination condition for nested calls.
+// Nested calls currently used for blockquotes &amp; lists
+if (state.tShift[line] &lt; state.blkIndent) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_block.prototype.skipSpaces" id="apidoc.element.remarkable.state_block.prototype.skipSpaces">
+        function <span class="apidocSignatureSpan">remarkable.state_block.prototype.</span>skipSpaces
+        <span class="apidocSignatureSpan">(pos)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function skipSpaces(pos) {
+  for (var max = this.src.length; pos &lt; max; pos++) {
+    if (this.src.charCodeAt(pos) !== 0x20/* space */) { break; }
+  }
+  return pos;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+oldIndent = state.blkIndent;
+state.blkIndent = 0;
+
+oldBMarks = [ state.bMarks[startLine] ];
+state.bMarks[startLine] = pos;
+
+// check if we have an empty blockquote
+pos = pos &lt; max ? state.<span class="apidocCodeKeywordSpan">skipSpaces</span>(pos) : pos;
+lastLineEmpty = pos &gt;= max;
+
+oldTShift = [ state.tShift[startLine] ];
+state.tShift[startLine] = pos - state.bMarks[startLine];
+
+terminatorRules = state.parser.ruler.getRules('blockquote');
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.state_inline" id="apidoc.module.remarkable.state_inline">module remarkable.state_inline</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_inline.state_inline" id="apidoc.element.remarkable.state_inline.state_inline">
+        function <span class="apidocSignatureSpan">remarkable.</span>state_inline
+        <span class="apidocSignatureSpan">(src, parserInline, options, env, outTokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateInline(src, parserInline, options, env, outTokens) {
+  this.src = src;
+  this.env = env;
+  this.options = options;
+  this.parser = parserInline;
+  this.tokens = outTokens;
+  this.pos = 0;
+  this.posMax = this.src.length;
+  this.level = 0;
+  this.pending = '';
+  this.pendingLevel = 0;
+
+  this.cache = [];        // Stores { start: end } pairs. Useful for backtrack
+                          // optimization of pairs parse (emphasis, strikes).
+
+  // Link parser state vars
+
+  this.isInLabel = false; // Set true when seek link label - we should disable
+                          // "paired" rules (emphasis, strikes) to not skip
+                          // tailing `]`
+
+  this.linkLevel = 0;     // Increment for each nesting link. Used to prevent
+                          // nesting in definitions
+
+  this.linkContent = '';  // Temporary storage for link url
+
+  this.labelUnmatchedScopes = 0; // Track unpaired `[` for link labels
+                                 // (backtrack optimization)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.remarkable.state_inline.prototype" id="apidoc.module.remarkable.state_inline.prototype">module remarkable.state_inline.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_inline.prototype.cacheGet" id="apidoc.element.remarkable.state_inline.prototype.cacheGet">
+        function <span class="apidocSignatureSpan">remarkable.state_inline.prototype.</span>cacheGet
+        <span class="apidocSignatureSpan">(key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cacheGet = function (key) {
+  return key &lt; this.cache.length ? this.cache[key] : 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+ParserInline.prototype.skipToken = function (state) {
+var rules = this.ruler.getRules('');
+var len = rules.length;
+var pos = state.pos;
+var i, cached_pos;
+
+if ((cached_pos = state.<span class="apidocCodeKeywordSpan">cacheGet</span>(pos)) &gt; 0) {
+  state.pos = cached_pos;
+  return;
+}
+
+for (i = 0; i &lt; len; i++) {
+  if (rules[i](state, true)) {
+    state.cacheSet(pos, state.pos);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_inline.prototype.cacheSet" id="apidoc.element.remarkable.state_inline.prototype.cacheSet">
+        function <span class="apidocSignatureSpan">remarkable.state_inline.prototype.</span>cacheSet
+        <span class="apidocSignatureSpan">(key, val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cacheSet = function (key, val) {
+  for (var i = this.cache.length; i &lt;= key; i++) {
+    this.cache.push(0);
+  }
+
+  this.cache[key] = val;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if ((cached_pos = state.cacheGet(pos)) &gt; 0) {
+    state.pos = cached_pos;
+    return;
+  }
+
+  for (i = 0; i &lt; len; i++) {
+    if (rules[i](state, true)) {
+      state.<span class="apidocCodeKeywordSpan">cacheSet</span>(pos, state.pos);
+      return;
+    }
+  }
+
+  state.pos++;
+  state.cacheSet(pos, state.pos);
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_inline.prototype.push" id="apidoc.element.remarkable.state_inline.prototype.push">
+        function <span class="apidocSignatureSpan">remarkable.state_inline.prototype.</span>push
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">push = function (token) {
+  if (this.pending) {
+    this.pushPending();
+  }
+
+  this.tokens.push(token);
+  this.pendingLevel = this.level;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function readFile(filename, encoding, callback) {
+if (options.file === '-') {
+  var chunks = [];
+
+  // read from stdin
+  process.stdin.on('data', function(chunk) {
+    chunks.<span class="apidocCodeKeywordSpan">push</span>(chunk);
+  });
+
+  process.stdin.on('end', function() {
+    return callback(null, Buffer.concat(chunks).toString(encoding));
+  });
+} else {
+  fs.readFile(filename, encoding, callback);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.remarkable.state_inline.prototype.pushPending" id="apidoc.element.remarkable.state_inline.prototype.pushPending">
+        function <span class="apidocSignatureSpan">remarkable.state_inline.prototype.</span>pushPending
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pushPending = function () {
+  this.tokens.push({
+    type: 'text',
+    content: this.pending,
+    level: this.pendingLevel
+  });
+  this.pending = '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     continue;
+   }
+
+   state.pending += state.src[state.pos++];
+ }
+
+ if (state.pending) {
+   state.<span class="apidocCodeKeywordSpan">pushPending</span>();
+ }
+};
+
+/**
+* Parse the given input string.
+*
+* @param  {String} `str`
+...</pre></li>
+    </ul>
 
 
 </div>
